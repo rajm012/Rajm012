@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import profilePhoto from '../assets/Raj-1.jpg'; // Import your photo
+import newprofile from '../assets/w10.png';
 
 const Home = () => {
   return (
@@ -42,7 +43,7 @@ const Home = () => {
               {/* Hero image */}
               <div className="aspect-square rounded-full overflow-hidden border-4 border-white dark:border-indigo-700 shadow-xl">
                 <img 
-                  src={profilePhoto} 
+                  src={newprofile} 
                   alt="Raj M" 
                   className="w-full h-full object-cover"
                 />
