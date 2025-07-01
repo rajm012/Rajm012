@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import AppRoutes from './Routes';
+import AppRoutes from './routes';
 import TailwindTest from './components/TailwindTest';
 // Do not import CSS in component files, only in main.jsx
 // import './index.css';
