@@ -2,13 +2,22 @@ import { useState } from 'react';
 
 const ProjectCard = ({ title, description, image, techStack, github, demo, tags }) => {
   const [showDetails, setShowDetails] = useState(false);
+  const [imgError, setImgError] = useState(false);
+  
+  // Fallback to default image if project image fails to load
+  const handleImageError = () => {
+    setImgError(true);
+  };
+  
+  const imageSrc = imgError ? '/projects/default.jpg' : image;
   
   return (
-    <div className="card group">
-      <div className="relative overflow-hidden rounded-lg mb-4 aspect-video bg-gray-100 dark:bg-indigo-700">
+    <div className="card group flex flex-col h-full">
+      <div className="relative overflow-hidden rounded-lg mb-4 aspect-video bg-gray-100 dark:bg-indigo-700 flex-shrink-0">
         <img 
-          src={image} 
+          src={imageSrc} 
           alt={title} 
+          onError={handleImageError}
           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-indigo-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
@@ -79,7 +88,7 @@ const ProjectCard = ({ title, description, image, techStack, github, demo, tags 
           </span>
         ))}
       </div>
-      <p className="text-gray-600 dark:text-indigo-300 text-sm line-clamp-2">
+      <p className="text-gray-600 dark:text-indigo-300 text-sm line-clamp-3 flex-grow">
         {description}
       </p>
       
