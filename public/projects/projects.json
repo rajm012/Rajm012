@@ -1,0 +1,332 @@
+[
+  {
+    "id": 0,
+    "title": "MatBot",
+    "description": "Bot built via LLM and finetuning to solve matlab related issues and problems.",
+    "image": "/projects/Matbot.png",
+    "techStack": ["Next.js", "React", "TypeScript", "AI"],
+    "github": "https://github.com/rajm012/Deepfake-Detection",
+    "demo": "",
+    "tags": ["Web", "AI", "Full-Stack"]
+  },
+  {
+    "id": 1,
+    "title": "GenWeb",
+    "description": "GenWeb is an AI-powered website builder built with Next.js, designed to streamline web development using modern tools like Clerk for authentication and Supabase for data storage.",
+    "image": "/projects/Genweb.png",
+    "techStack": ["Next.js", "React", "TypeScript", "Clerk", "Supabase", "AI"],
+    "github": "https://github.com/rajm012/GenWeb",
+    "demo": "https://gen-web-ebon.vercel.app",
+    "tags": ["Web", "AI", "Full-Stack"]
+  },
+  {
+    "id": 2,
+    "title": "NetSentinel",
+    "description": "Real-time Network Traffic Monitoring and Threat Detection Platform built using React, FastAPI, Scapy, and modern data visualization tools.",
+    "image": "/projects/Netsentinel.png",
+    "techStack": ["React", "FastAPI", "Scapy", "Python", "Data Visualization"],
+    "github": "https://github.com/rajm012/NetSentinel",
+    "demo": "https://net-sentinel-three.vercel.app/",
+    "tags": ["Cybersecurity", "Network", "Monitoring"]
+  },
+  {
+    "id": 3,
+    "title": "MovieFlix",
+    "description": "A full-stack movie ticket booking application that delivers a smooth cinema experience for users and an all-in-one management solution for theatre admins. From wishlist and seat selection to real-time booking confirmation and admin dashboards.",
+    "image": "/projects/Movieflix.png",
+    "techStack": ["React", "Node.js", "Express", "MongoDB", "JavaScript"],
+    "github": "https://github.com/rajm012/MovieFlix",
+    "demo": "https://cine-phile-sable.vercel.app/",
+    "tags": ["Web", "Full-Stack", "Booking System"]
+  },
+  {
+    "id": 4,
+    "title": "BlogsCorner",
+    "description": "A modern, responsive blog platform built for friends to share inspirational content and society-related views. Create, discover, and engage with meaningful content in a beautifully designed interface.",
+    "image": "/projects/BlogCorner.png",
+    "techStack": ["TypeScript", "Next.js", "React", "Full-Stack"],
+    "github": "https://github.com/rajm012/BlogsCorner",
+    "demo": "https://blog-corner-jet.vercel.app/",
+    "tags": ["Web", "Full-Stack", "Blog"]
+  },
+  {
+    "id": 5,
+    "title": "SubtitleAI-Pro",
+    "description": "An AI-powered web application that automatically generates English subtitles from YouTube videos using OpenAI's Whisper LLM.",
+    "image": "/projects/Subtitle.png",
+    "techStack": ["Python", "OpenAI", "Whisper", "YouTube API"],
+    "github": "https://github.com/rajm012/SubtitleAl-Pro",
+    "demo": "",
+    "tags": ["AI", "Web", "Video Processing"]
+  },
+  {
+    "id": 6,
+    "title": "Traffic-Flow-Simulation",
+    "description": "A project for the course Partial Differential Equation that uses LWR and LSTM to estimate Traffic flow.",
+    "image": "/projects/Traffic.png",
+    "techStack": ["Python", "LSTM", "LWR", "Jupyter Notebook", "Simulation"],
+    "github": "https://github.com/rajm012/Traffic-Flow-Simulation",
+    "demo": "",
+    "tags": ["AI/ML", "Simulation", "Data Science"]
+  },
+  {
+    "id": 7,
+    "title": "DDoS-Tool-WebApp",
+    "description": "A powerful and ethical DDoS testing tool designed for security professionals and developers to simulate and analyze various types of DDoS attacks. This tool helps you understand how attacks work and how to defend against them.",
+    "image": "/projects/DDOS.png",
+    "techStack": ["Python", "Flask", "Network Security"],
+    "github": "https://github.com/rajm012/DDoS-Tool-WebApp",
+    "demo": "",
+    "tags": ["Cybersecurity", "Security", "Testing"]
+  },
+  {
+    "id": 8,
+    "title": "Safar",
+    "description": "Safar is a full-stack travel story application built using the MERN stack. It allows users to document, manage, and share their travel experiences through stories, complete with features for searching, filtering, and favoriting.",
+    "image": "/projects/Safar.png",
+    "techStack": ["MongoDB", "Express", "React", "Node.js", "MERN Stack"],
+    "github": "https://github.com/rajm012/Safar",
+    "demo": "https://safar-umber.vercel.app/",
+    "tags": ["Web", "Full-Stack", "Travel"]
+  },
+  {
+    "id": 9,
+    "title": "Differential-Equation-by-PINN",
+    "description": "This project leverages Physics-Informed Neural Networks (PINNs) to solve Bessel's and Legendre's differential equations, commonly found in physics and engineering. By embedding differential equations directly into the neural network's training process, we achieve accurate, data-driven solutions.",
+    "image": "/projects/DiffByPINN.png",
+    "techStack": ["Python", "PINNs", "Neural Networks", "Jupyter Notebook"],
+    "github": "https://github.com/rajm012/Diifferential-Equation-by-PINN",
+    "demo": "",
+    "tags": ["AI/ML", "Physics", "Mathematics"]
+  },
+  {
+    "id": 10,
+    "title": "Simple-File-Encryption",
+    "description": "A modern, secure file encryption/decryption web application with a beautiful UI for protecting your sensitive files.",
+    "image": "/projects/FileEncrypt.png",
+    "techStack": ["JavaScript", "Cryptography", "Web Development"],
+    "github": "https://github.com/rajm012/Simple-File-Encryption",
+    "demo": "https://simple-file-encryption.vercel.app/",
+    "tags": ["Security", "Web", "Encryption"]
+  },
+  {
+    "id": 11,
+    "title": "Port-Scanner",
+    "description": "The Basic Port Scanner is a powerful web-based tool designed to scan ports on a target IP address. It provides detailed information about open ports, services, and additional data such as geolocation, operating system detection, and Shodan lookup results.",
+    "image": "/projects/PortScan.png",
+    "techStack": ["HTML", "Python", "Network Security"],
+    "github": "https://github.com/rajm012/Port-Scanner",
+    "demo": "https://port-scanner-webapp-hza2.onrender.com/",
+    "tags": ["Security", "Network", "Cybersecurity"]
+  },
+  {
+    "id": 12,
+    "title": "Rubiks-Cube-Simulator",
+    "description": "A feature-rich, interactive 3D Rubik's Cube simulator built with React and Three.js. Made in 3.5 hrs.",
+    "image": "/projects/Rubix.png",
+    "techStack": ["React", "Three.js", "JavaScript", "3D Graphics"],
+    "github": "https://github.com/rajm012/Rubiks-Cube-Simulator",
+    "demo": "https://rubiks-cube-simulator.vercel.app/",
+    "tags": ["Web", "3D", "Game"]
+  },
+  {
+    "id": 13,
+    "title": "Space-Quiz",
+    "description": "An interactive, space-themed web quiz application that combines fun and education with real-time data. Made in 3 hrs and 21 mins.",
+    "image": "/projects/SpaceQuiz.png",
+    "techStack": ["JavaScript", "Flask", "HTML", "NASA API"],
+    "github": "https://github.com/rajm012/Space-Quiz",
+    "demo": "https://space-quiz-dun.vercel.app/",
+    "tags": ["Web", "Educational", "Quiz"]
+  },
+  {
+    "id": 14,
+    "title": "Self-Driving-Car",
+    "description": "A small self-driving car simulation which learns its movement through neural networks and improvises its motion autonomously.",
+    "image": "/projects/SelfLearnCar.png",
+    "techStack": ["JavaScript", "Neural Networks", "Machine Learning", "Simulation"],
+    "github": "https://github.com/rajm012/Self-Driving-Car",
+    "demo": "https://self-driving-car-lime.vercel.app/",
+    "tags": ["AI/ML", "Simulation", "Web"]
+  },
+  {
+    "id": 15,
+    "title": "Basic-Simplex-Solver",
+    "description": "A web application for solving linear programming problems using the Simplex Method with step-by-step visualizations.",
+    "image": "/projects/Simplex.png",
+    "techStack": ["HTML", "JavaScript", "Mathematics", "Optimization"],
+    "github": "https://github.com/rajm012/Basic-Simplex-Solver",
+    "demo": "",
+    "tags": ["Web", "Mathematics", "Education"]
+  },
+  {
+    "id": 16,
+    "title": "Password-Manager",
+    "description": "A secure and user-friendly password manager built with Next.js, Clerk for authentication, and Supabase for database storage. This application allows users to securely store, manage, and retrieve their passwords with ease.",
+    "image": "/projects/PassManage.png",
+    "techStack": ["TypeScript", "Next.js", "Clerk", "Supabase"],
+    "github": "https://github.com/rajm012/password-manager",
+    "demo": "https://password-manager-012.vercel.app/",
+    "tags": ["Web", "Security", "Full-Stack"]
+  },
+  {
+    "id": 17,
+    "title": "Password-Generator",
+    "description": "Generate strong, secure, and unique passwords with ease. This web-based password generator offers real-time analysis, strength evaluation, and breach detection to ensure maximum security.",
+    "image": "/projects/PassGen.png",
+    "techStack": ["Python", "Flask", "Security"],
+    "github": "https://github.com/rajm012/Password-Generator",
+    "demo": "",
+    "tags": ["Web", "Security", "Tools"]
+  },
+  {
+    "id": 18,
+    "title": "Ethical-Keylogger",
+    "description": "An ethical keylogger designed for parental control and safety monitoring. It captures keystrokes, takes periodic screenshots, and sends activity reports via email.",
+    "image": "/projects/KeyLogger.png",
+    "techStack": ["Python", "Security", "Monitoring"],
+    "github": "https://github.com/rajm012/Ethical-Keylogger",
+    "demo": "",
+    "tags": ["Security", "Cybersecurity", "Education"]
+  },
+  {
+    "id": 19,
+    "title": "Transcript Generator",
+    "description": "A simple web app to transcribe audio files and recordings using OpenAI's Whisper.",
+    "image": "/projects/Transcript.png",
+    "techStack": ["HTML", "Flask", "Python", "OpenAI", "Whisper"],
+    "github": "https://github.com/rajm012/transcript-generator",
+    "demo": "",
+    "tags": ["AI", "Web", "Audio Processing"]
+  },
+  {
+    "id": 20,
+    "title": "Basic-Image-Classification",
+    "description": "This project implements a K-Nearest Neighbors (KNN) classifier for hand-drawn figures and provides an interactive web-based interface for visualizing and evaluating its performance. The implementation includes parallelized evaluation of different k values.",
+    "image": "/projects/ImgClass.png",
+    "techStack": ["JavaScript", "Machine Learning", "KNN", "Classification"],
+    "github": "https://github.com/rajm012/Basic-Image-Classification",
+    "demo": "",
+    "tags": ["AI/ML", "Web", "Computer Vision"]
+  },
+  {
+    "id": 21,
+    "title": "FlaskPasswordStrengthCheck",
+    "description": "A basic web application using Python Flask to check the strength of a password along with the estimated time it will take to crack that password.",
+    "image": "/projects/Pass.png",
+    "techStack": ["Python", "Flask", "Security"],
+    "github": "https://github.com/rajm012/FlaskPasswordStrengthCheck",
+    "demo": "",
+    "tags": ["Web", "Security", "Cybersecurity"]
+  },
+  {
+    "id": 22,
+    "title": "LendingPool-Blockchain",
+    "description": "A simple blockchain-based lending platform with dynamic interest rates built using Solidity smart contracts.",
+    "image": "/projects/Solidity.png",
+    "techStack": ["JavaScript", "Solidity", "Blockchain", "Web3"],
+    "github": "https://github.com/rajm012/LendingPool-Blockchain",
+    "demo": "",
+    "tags": ["Blockchain", "Web3", "Smart Contracts"]
+  },
+  {
+    "id": 23,
+    "title": "Basic-To-Do",
+    "description": "Basic Task Manager for everyone with a clean and intuitive interface for managing daily tasks.",
+    "image": "/projects/ToDo.png",
+    "techStack": ["JavaScript", "HTML", "CSS", "Web Development"],
+    "github": "https://github.com/rajm012/Basic-To-Do",
+    "demo": "",
+    "tags": ["Web", "Productivity", "Tools"]
+  },
+  {
+    "id": 24,
+    "title": "ApnaGhar",
+    "description": "Basic Real-Estate website made to check hands over CSS with property listings and modern design.",
+    "image": "/projects/ApnaGhar.png",
+    "techStack": ["HTML", "CSS", "Web Development"],
+    "github": "https://github.com/rajm012/ApnaGhar",
+    "demo": "",
+    "tags": ["Web", "Frontend", "CSS"]
+  },
+  {
+    "id": 25,
+    "title": "Manzil",
+    "description": "Basic web to test my pure CSS skills in a day with modern layouts and responsive design.",
+    "image": "/projects/Manzil.png",
+    "techStack": ["HTML", "CSS", "Frontend"],
+    "github": "https://github.com/rajm012/Manzil",
+    "demo": "",
+    "tags": ["Web", "Frontend", "CSS"]
+  },
+  {
+    "id": 26,
+    "title": "WebScanner",
+    "description": "A full-stack web application to scan and detect security vulnerabilities in websites and networks.",
+    "image": "/projects/Vulner.png",
+    "techStack": ["React", "Flask", "Security", "Network"],
+    "github": "https://github.com/rajm012/WebScanner",
+    "demo": "",
+    "tags": ["Cybersecurity", "Security", "Web"]
+  },
+  {
+    "id": 27,
+    "title": "PDF-GPT",
+    "description": "PDF-GPT is a private, local-first chatbot that lets you upload PDF documents, extract content into vector embeddings, and ask questions about the documents using an LLM backend (powered by Ollama).",
+    "image": "/projects/default.jpg",
+    "techStack": ["Python", "LLM", "Ollama", "Vector Embeddings"],
+    "github": "https://github.com/rajm012/PDF-GPT",
+    "demo": "",
+    "tags": ["AI", "NLP", "Chatbot"]
+  },
+  {
+    "id": 28,
+    "title": "Neuro-Trade-via-PINNs",
+    "description": "Using SDE along with PINNs to formulate the Indian Equity prices for last 10 years with advanced financial modeling.",
+    "image": "/projects/default.jpg",
+    "techStack": ["Python", "Jupyter Notebook", "PINNs", "Financial Modeling"],
+    "github": "https://github.com/rajm012/Neuro-Trade-via-PINNs",
+    "demo": "",
+    "tags": ["AI/ML", "Finance", "Mathematics"]
+  },
+  {
+    "id": 29,
+    "title": "Smart-Notes",
+    "description": "Smart Notes Saver is a powerful Chrome extension that lets you save, categorize, and summarize text snippets from any webpage with Dark Mode Toggle and download functionality.",
+    "image": "/projects/Notes.png",
+    "techStack": ["JavaScript", "Chrome Extension", "Web Development"],
+    "github": "https://github.com/rajm012/Smart-Notes",
+    "demo": "",
+    "tags": ["Web", "Productivity", "Browser Extension"]
+  },
+  {
+    "id": 30,
+    "title": "Basic-Chrome-Extension",
+    "description": "A custom new tab Chrome extension that displays an analog clock, a digital clock with date, and motivational quotes to keep you inspired while studying or working.",
+    "image": "/projects/clock.png",
+    "techStack": ["JavaScript", "Chrome Extension", "HTML", "CSS"],
+    "github": "https://github.com/rajm012/Basic-Chrome-Extension",
+    "demo": "",
+    "tags": ["Web", "Browser Extension", "Productivity"]
+  },
+  {
+    "id": 31,
+    "title": "Auto-Dark-Mode",
+    "description": "A Chrome extension that applies dark mode to any website for a better browsing experience.",
+    "image": "/projects/Auto.png",
+    "techStack": ["JavaScript", "Chrome Extension"],
+    "github": "https://github.com/rajm012/Auto-Dark-Mode",
+    "demo": "",
+    "tags": ["Web", "Browser Extension", "Tools"]
+  },
+  {
+    "id": 32,
+    "title": "Rajm012",
+    "description": "Portfolio Website for me.",
+    "image": "/projects/rajm012.png",
+    "techStack": ["JavaScript", "Web Development"],
+    "github": "https://github.com/rajm012/Rajm012",
+    "demo": "https://rajm012.vercel.app/",
+    "tags": ["Web", "Portfolio", "JavaScript"]
+  }
+]
