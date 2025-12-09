@@ -133,4 +133,3 @@ export default {
     require('@tailwindcss/aspect-ratio'),
   ],
 };
-
