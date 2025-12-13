@@ -328,5 +328,16 @@
     "github": "https://github.com/rajm012/Rajm012",
     "demo": "https://rajm012.vercel.app/",
     "tags": ["Web", "Portfolio", "JavaScript"]
+  },
+  {
+    "id": 33,
+    "title": "Chit-Chat",
+    "description": "A modern, real-time collaborative document editing platform with team management, live chat, notifications, and good UI",
+    "image": "/projects/ChitChat.png",
+    "techStack": ["JavaScript", "Web Development", "Socket.io", "Hugging Face Spaces"],
+    "github": "https://github.com/rajm012/Chit-Chat",
+    "demo": "https://huggingface.co/spaces/rajmahi012/chit-chat/",
+    "tags": ["Web", "Socket IO", "JavaScript"]
   }
 ]
+
