@@ -40,6 +40,16 @@
     "tags": ["Web", "Full-Stack", "Booking System"]
   },
   {
+    "id": 3,
+    "title": "CheckIT",
+    "description": "A modular, browser-based real-time object detection application powered by TensorFlow.js and the COCO-SSD model. Detects 80+ common objects directly in your browser using your webcam - no backend server required",
+    "image": "/projects/CkeckIT.png",
+    "techStack": ["JavaScript", "Web Development", "Deep Learning", "TensorFlow"],
+    "github": "https://github.com/rajm012/Check-It",
+    "demo": "https://rajm012.github.io/Check-It/",
+    "tags": ["Web", "TensorFlow", "JavaScript", "COCO-SSD", "DeepLearning"]
+  },
+  {
     "id": 4,
     "title": "BlogsCorner",
     "description": "A modern, responsive blog platform built for friends to share inspirational content and society-related views. Create, discover, and engage with meaningful content in a beautifully designed interface.",
@@ -340,4 +350,5 @@
     "tags": ["Web", "Socket IO", "JavaScript"]
   }
 ]
+
 
