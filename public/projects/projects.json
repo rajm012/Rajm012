@@ -20,6 +20,16 @@
     "tags": ["Web", "AI", "Full-Stack"]
   },
   {
+    "id": 1,
+    "title": "YT-Wrap",
+    "description": "An immersive 3D visualization of your YouTube watch history, transforming 28,000+ videos into an interactive constellation of content patterns and viewing habits.",
+    "image": "/projects/YTWrap.png",
+    "techStack": ["React", "DL"],
+    "github": "https://github.com/rajm012/YT-WrapUp",
+    "demo": "https://rajm012.github.io/YT-WrapUp/",
+    "tags": ["Web", "AI"]
+  },
+  {
     "id": 2,
     "title": "NetSentinel",
     "description": "Real-time Network Traffic Monitoring and Threat Detection Platform built using React, FastAPI, Scapy, and modern data visualization tools.",
@@ -350,6 +360,7 @@
     "tags": ["Web", "Socket IO", "JavaScript"]
   }
 ]
+
 
 
 
