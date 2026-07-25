@@ -1,4 +1,4 @@
-# 👋 Raj Maurya
+# Raj Maurya `(@rajm012)`
 
 **B.Tech -- Mathematics & Computing**  
 Indian Institute of Technology (IIT) Mandi  
@@ -24,16 +24,17 @@ I'm a builder who thinks in equations and ships in code. My GitHub is a lab note
 Indian Institute of Technology (IIT) Mandi  
 *Expected Graduation: 2027*
 
-- **CGPA:** 8.72 (after 5th semester)
+- **CGPA:** 8.73 (after 6th semester)
 - **Core Coursework:**
   - Data Structures & Algorithms  
   - Probability & Statistics  
   - Mathematical Foundations of Computer Science  
   - Machine Learning & Deep Learning  
   - Data Science  
-  - Linear Algebra & Differential Equations 
+  - Linear Algebra & Differential Equations [partial too]
   - Mathematical Modelling 
-  - Computer Networks  
+  - Computer Networks
+  - Quant Finance
 
 ---
 
@@ -42,17 +43,19 @@ Indian Institute of Technology (IIT) Mandi
 ```python
 # What I reach for daily
 DailyDrivers = {
-    "Languages": ["Python", "JavaScript", "C++", "Bash"],
-    "Frontend": ["React", "Next.js", "Three.js", "HTML-CSS"],
-    "Backend": ["Node.js", "FastAPI", "Flask",],
+    "Languages": ["Python", "JavaScript", "C++(rare)", "Bash"],
+    "Frontend": ["React", "Next.js", "React-Native", "HTML-CSS"],
+    "Backend": ["Node.js", "FastAPI", "Flask", "GraphQL"],
     "Databases": ["MongoDB", "PostgreSQL", "Supabase"],
     "AIML": ["TensorFlow", "PyTorch", "Scikit-learn", "OpenCV"],
     "Security": ["Cryptography", "Network Analysis", "Ethical Testing"],
-    "Devops": ["Docker", "Git", "Vercel", "Render"]
+    "Devops": ["Docker", "Git", "Vercel", "Render"],
+    "Quantum Computing": ["Qiskit", "AER", "Quantum Circuits/Gates"],
+    "Softwares": ["COMSOL", "Matlab", "Packet Tracer"]
 }
 
 # What I'm currently learning
-LearningNow = ["Advanced Cryptography", "Kubernetes", "Rust", "Agents"]
+LearningNow = ["Advanced Cryptography", "Kubernetes", "Rust", "Agents", "Fluid Dynamics", "Quantum Computing"]
 
 # My philosophy
 Principles = [
@@ -67,26 +70,37 @@ Principles = [
 
 ## 🔬 Research & Experience
 
-### Research Intern — Computational Complexity  
-**IIT Mandi (Winter Internship)**
+### Research Intern - Computational Complexity  
+**IIT Mandi (Winter Intern)**
 
 - Studied NP-completeness and complexity classes  
 - Explored approximation algorithms and optimization strategies  
 
+### SDE Intern - App developer
+**ADDPINCH (Summer Intern)**
+
+- Worked on App Development and Bugs solving
+- Learned to work with `GraphQL`
+
+### Teaching Assistant - SDE with AI
+**Himshikhar IIT Mandi('26)**
+
+- Worked as T.A. in the course Software Development with AI
+- Active lab TA, helping to understand the core SDE enhancing with AI
+
 ---
 
-### Core Member — Research Society, IIT Mandi (2024-Current)
+### Core Member - Research Society, IIT Mandi (2024-Current)
 ---
 
 ## 🌱 What I’m Exploring Now
 
 - Theory-aware deep learning and AI systems
 - Mathematical modeling of real-world systems  
-- Security tooling from a systems perspective  
+- Fluid Dynamics and Micro Fluids [mathematical persa]
+- Quantum Computing and Particle Physics
 
 ---
-
-
 
 ## 🎯 What I'm Building Right Now
 
@@ -148,28 +162,19 @@ My GitHub is messy, my commit messages are sometimes "fixed that thing," and my 
 
 ## 📬 Let's Connect & Collaborate
 
-I'm actively looking for **Summer 2026 internships** where I can work on:
-- AI/ML with mathematical foundations
+I'm actively looking for **opportunities** where I can work on:
+- AI/ML with mathematical foundations [PINNs]
 - Full-stack development with real impact
 - Pure Research or Engineering
 - Anything that makes me say "wait, how does that work?" daily
+- I am also trying `Quantum Computing` [can work here too]
+- Building `Major Technical Project` in `Fluid Dynamics` [love to expolre]
 
-**📧 Email:** [rajmahimaurya@gmail.com](mailto:rajmahimaurya@gmail.com)  
-**💼 LinkedIn:** [Raj Maurya](https://www.linkedin.com/in/raj-maurya-271b32237/)  
-**🐙 GitHub:** [@rajm012](https://github.com/rajm012)  
+**📧 Email:** [rajmahimaurya@gmail.com](mailto:rajmahimaurya@gmail.com)
+**💼 LinkedIn:** [Raj Maurya](https://www.linkedin.com/in/raj-maurya-271b32237/)
+**🐙 GitHub:** [@rajm012](https://github.com/rajm012)
 **🌐 Portfolio:** [rajm012.vercel.app](https://rajm012.vercel.app/)
 
 ---
 
-## 🎯 Quick Checks
-
-```yaml
-FavoriteError: "Uncaught TypeError: Cannot read property '...' of undefined"
-CurrentMood: "Building something that will probably break in production"
-```
-
----
-
-**P.S.** If you're a recruiter, yes, I'm looking for internships. No, I won't ask you to solve FizzBuzz in an interview (unless you want to). Let's talk about hard problems instead.
-
-**P.P.S.** Most of these projects have typos in the READMEs. I'm better at code than spelling.
+**P.S.** If you're a recruiter, yes, I'm looking for opportunity. Yes, I don't like to solve FizzBuzz in an interview (unless you want to). Let's talk about hard problems instead.
