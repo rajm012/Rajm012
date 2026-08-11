@@ -13,6 +13,7 @@ const Header = ({ darkMode, toggleDarkMode }) => {
     { path: '/skills', text: 'Skills' },
     { path: '/projects', text: 'Projects' },
     { path: '/education', text: 'Education' },
+    { path: '/certificates', text: 'Certificates' },
     { path: '/contact', text: 'Contact' },
   ];
 

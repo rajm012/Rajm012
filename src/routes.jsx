@@ -4,6 +4,7 @@ import About from './pages/About';
 import Skills from './pages/Skills';
 import Projects from './pages/Projects';
 import Education from './pages/Education';
+import Certificates from './pages/Certificates';
 import Contact from './pages/Contact';
 import './index.css';
 
@@ -15,6 +16,7 @@ const AppRoutes = () => {
       <Route path="/skills" element={<Skills />} />
       <Route path="/projects" element={<Projects />} />
       <Route path="/education" element={<Education />} />
+      <Route path="/certificates" element={<Certificates />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="*" element={
         <div className="flex flex-col items-center justify-center min-h-screen bg-purple-50 dark:bg-indigo-900 text-indigo-900 dark:text-indigo-100">
