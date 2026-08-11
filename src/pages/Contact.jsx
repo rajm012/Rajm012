@@ -1,83 +1,7 @@
-import { useState } from 'react';
+import { useForm, ValidationError } from '@formspree/react';
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: ''
-  });
-  
-  const [formErrors, setFormErrors] = useState({});
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitSuccess, setSubmitSuccess] = useState(false);
-  const [submitError, setSubmitError] = useState(false);
-  
-  const validateForm = () => {
-    let errors = {};
-    let isValid = true;
-    
-    if (!formData.name.trim()) {
-      errors.name = 'Name is required';
-      isValid = false;
-    }
-    
-    if (!formData.email.trim()) {
-      errors.email = 'Email is required';
-      isValid = false;
-    } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
-      errors.email = 'Email is invalid';
-      isValid = false;
-    }
-    
-    if (!formData.message.trim()) {
-      errors.message = 'Message is required';
-      isValid = false;
-    } else if (formData.message.trim().length < 1) {
-      errors.message = 'Message is too short (minimum 10 characters)';
-      isValid = false;
-    }
-    
-    setFormErrors(errors);
-    return isValid;
-  };
-  
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
-    
-    // Clear error for this field if it exists
-    if (formErrors[name]) {
-      setFormErrors({ ...formErrors, [name]: '' });
-    }
-  };
-  
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    
-    if (validateForm()) {
-      setIsSubmitting(true);
-      
-      // Simulate API call
-      setTimeout(() => {
-        setIsSubmitting(false);
-        setSubmitSuccess(true);
-        
-        // Reset form
-        setFormData({
-          name: '',
-          email: '',
-          subject: '',
-          message: ''
-        });
-        
-        // Reset success message after 5 seconds
-        setTimeout(() => {
-          setSubmitSuccess(false);
-        }, 5000);
-      }, 1500);
-    }
-  };
+  const [state, handleSubmit] = useForm('xaewoljb');
 
   return (
     <section className="py-16">
@@ -87,7 +11,7 @@ const Contact = () => {
         <div className="flex flex-col lg:flex-row gap-12">
           <div className="lg:w-1/2">
             <div className="card h-full">
-              {submitSuccess ? (
+              {state.succeeded ? (
                 <div className="flex flex-col items-center justify-center h-full text-center">
                   <div className="w-16 h-16 bg-green-100 dark:bg-green-900 rounded-full flex items-center justify-center mb-4">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-green-500 dark:text-green-300" viewBox="0 0 20 20" fill="currentColor">
@@ -100,7 +24,7 @@ const Contact = () => {
                   </p>
                   <button 
                     className="btn-secondary"
-                    onClick={() => setSubmitSuccess(false)}
+                    onClick={() => window.location.reload()}
                   >
                     Send Another Message
                   </button>
@@ -115,18 +39,11 @@ const Contact = () => {
                       type="text"
                       id="name"
                       name="name"
-                      value={formData.name}
-                      onChange={handleChange}
-                      className={`w-full px-4 py-2 rounded-md border ${
-                        formErrors.name 
-                          ? 'border-red-500 dark:border-red-400' 
-                          : 'border-gray-300 dark:border-indigo-600'
-                      } bg-white dark:bg-indigo-800 text-indigo-900 dark:text-indigo-100 focus:outline-none focus:ring-2 focus:ring-violet-500 dark:focus:ring-violet-300`}
+                      required
+                      disabled={state.submitting}
+                      className="w-full px-4 py-2 rounded-md border border-gray-300 dark:border-indigo-600 bg-white dark:bg-indigo-800 text-indigo-900 dark:text-indigo-100 focus:outline-none focus:ring-2 focus:ring-violet-500 dark:focus:ring-violet-300"
                       placeholder="Raj Maurya"
                     />
-                    {formErrors.name && (
-                      <p className="mt-1 text-sm text-red-500 dark:text-red-400">{formErrors.name}</p>
-                    )}
                   </div>
                   
                   <div>
@@ -137,18 +54,12 @@ const Contact = () => {
                       type="email"
                       id="email"
                       name="email"
-                      value={formData.email}
-                      onChange={handleChange}
-                      className={`w-full px-4 py-2 rounded-md border ${
-                        formErrors.email 
-                          ? 'border-red-500 dark:border-red-400' 
-                          : 'border-gray-300 dark:border-indigo-600'
-                      } bg-white dark:bg-indigo-800 text-indigo-900 dark:text-indigo-100 focus:outline-none focus:ring-2 focus:ring-violet-500 dark:focus:ring-violet-300`}
+                      required
+                      disabled={state.submitting}
+                      className="w-full px-4 py-2 rounded-md border border-gray-300 dark:border-indigo-600 bg-white dark:bg-indigo-800 text-indigo-900 dark:text-indigo-100 focus:outline-none focus:ring-2 focus:ring-violet-500 dark:focus:ring-violet-300"
                       placeholder="rajmahimaurya@gmail.com"
                     />
-                    {formErrors.email && (
-                      <p className="mt-1 text-sm text-red-500 dark:text-red-400">{formErrors.email}</p>
-                    )}
+                    <ValidationError prefix="Email" field="email" errors={state.errors} />
                   </div>
                   
                   <div>
@@ -159,8 +70,7 @@ const Contact = () => {
                       type="text"
                       id="subject"
                       name="subject"
-                      value={formData.subject}
-                      onChange={handleChange}
+                      disabled={state.submitting}
                       className="w-full px-4 py-2 rounded-md border border-gray-300 dark:border-indigo-600 bg-white dark:bg-indigo-800 text-indigo-900 dark:text-indigo-100 focus:outline-none focus:ring-2 focus:ring-violet-500 dark:focus:ring-violet-300"
                       placeholder="Hi!, its Good to see you here!"
                     />
@@ -174,28 +84,22 @@ const Contact = () => {
                       id="message"
                       name="message"
                       rows="6"
-                      value={formData.message}
-                      onChange={handleChange}
-                      className={`w-full px-4 py-2 rounded-md border ${
-                        formErrors.message 
-                          ? 'border-red-500 dark:border-red-400' 
-                          : 'border-gray-300 dark:border-indigo-600'
-                      } bg-white dark:bg-indigo-800 text-indigo-900 dark:text-indigo-100 focus:outline-none focus:ring-2 focus:ring-violet-500 dark:focus:ring-violet-300`}
+                      required
+                      disabled={state.submitting}
+                      className="w-full px-4 py-2 rounded-md border border-gray-300 dark:border-indigo-600 bg-white dark:bg-indigo-800 text-indigo-900 dark:text-indigo-100 focus:outline-none focus:ring-2 focus:ring-violet-500 dark:focus:ring-violet-300"
                       placeholder="Your message..."
                     ></textarea>
-                    {formErrors.message && (
-                      <p className="mt-1 text-sm text-red-500 dark:text-red-400">{formErrors.message}</p>
-                    )}
+                    <ValidationError prefix="Message" field="message" errors={state.errors} />
                   </div>
                   
                   <button
                     type="submit"
                     className={`btn-primary w-full flex items-center justify-center ${
-                      isSubmitting ? 'opacity-70 cursor-not-allowed' : ''
+                      state.submitting ? 'opacity-70 cursor-not-allowed' : ''
                     }`}
-                    disabled={isSubmitting}
+                    disabled={state.submitting}
                   >
-                    {isSubmitting ? (
+                    {state.submitting ? (
                       <>
                         <svg className="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
                           <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
