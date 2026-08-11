@@ -3,9 +3,10 @@
 **B.Tech -- Mathematics & Computing**  
 Indian Institute of Technology (IIT) Mandi  
 
-📧 Email: rajmahimaurya@gmail.com  
-🔗 LinkedIn: https://www.linkedin.com/in/raj-maurya-271b32237/  
-🌐 Portfolio: https://rajm012.vercel.app  
+- 📧 Email: `rajmahimaurya@gmail.com`
+- 🔗 LinkedIn: `https://www.linkedin.com/in/raj-maurya-271b32237`
+- 🌐 Portfolio: `https://rajm012.vercel.app`
+- Resume Drive: `https://drive.google.com/drive/folders/1RQ91XjJhHK-vf9zQU5Vxch2O6UvNKecf?usp=sharing`
 
 ---
 
