@@ -26,7 +26,7 @@ const Home = () => {
             </p>
             <div className="flex flex-wrap gap-4">
               <a 
-                href="/assets/rajm012-1.pdf" 
+                href="/assets/rajm012_1.pdf" 
                 download="Raj_M_Resume.pdf" 
                 className="btn-primary"
               >

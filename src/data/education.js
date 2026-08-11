@@ -7,7 +7,7 @@ export const education = [
     location: 'Mandi, Himachal Pradesh',
     description: 'Pursuing a B.Tech degree with a focus on Mathematics and Computing, specializing in algorithms, data structures, and machine learning',
     achievements: [
-      'GPA: 8.86/10 (as of end of 4th semester)',
+      'GPA: 8.73/10 (as of end of 6th semester)',
     ],
     courses: [
       'Data Structures and Algorithms',
@@ -15,7 +15,8 @@ export const education = [
       'Deep Learning',
       'Natural Language Processing', 'Cybersecurity','Networking', 'Operating Systems',
       'Database Management Systems', 'Differential Equations', 'Linear Algebra', 'Discrete Mathematics',
-      'Computer Organization and Architecture', 'Software Engineering', 'Statistics and Probability'
+      'Computer Organization and Architecture', 'Software Engineering', 'Statistics and Probability',
+      'Computer Networks', 'Software Engineering', 'Introduction to Qunatative Finance', 'Financial Engineering'
     ]
   },
   {

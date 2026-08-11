@@ -103,7 +103,7 @@ const Education = () => {
             technical books, and hands-on projects. I believe in staying updated with the latest technologies and industry trends.
           </p>
           <a 
-            href="/assets/rajm012-1.pdf" 
+            href="/assets/rajm012_1.pdf" 
             download="Raj_Maurya_Resume.pdf" 
             className="btn-primary inline-block"
           >

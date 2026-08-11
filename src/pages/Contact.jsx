@@ -296,7 +296,7 @@ const Contact = () => {
                   Twitter
                 </a>
                 <a 
-                  href="/assets/rajm012-1.pdf"
+                  href="/assets/rajm012_1.pdf"
                   download="Raj_M_Resume.pdf" 
                   className="flex items-center px-4 py-2 rounded-md bg-gray-100 dark:bg-indigo-700 text-indigo-900 dark:text-indigo-100 hover:bg-gray-200 dark:hover:bg-indigo-600 transition-colors"
                 >
