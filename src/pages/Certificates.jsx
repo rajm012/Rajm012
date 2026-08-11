@@ -8,7 +8,7 @@ const Certificates = () => {
 
         <div className="mb-8 text-center max-w-3xl mx-auto">
           <p className="text-gray-600 dark:text-indigo-300">
-            A static gallery of certificates stored in the public folder and served directly by Vite.
+            Some Certifications and stuffs ...
           </p>
         </div>
 

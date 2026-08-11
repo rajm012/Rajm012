@@ -36,7 +36,7 @@ export const certificates = [
     type: 'image',
   },
   {
-    id: 12,
+    id: 7,
     title: 'Risein Blockchain',
     file: '/certificates/Risein-Blockchain.pdf',
     type: 'pdf',
