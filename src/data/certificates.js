@@ -1,44 +1,44 @@
 export const certificates = [
   {
     id: 3,
-    title: 'Cognitive AI Certificate',
+    title: 'Prompt Engineering by Cognitive-AI',
     file: '/certificates/CognitiveAICertificate.pdf',
-    type: 'pdf',
+    type: 'pdf'
   },
   {
     id: 4,
-    title: 'Coursera DP',
+    title: 'Dynamic Programming by Coursera',
     file: '/certificates/Coursera-DP.pdf',
-    type: 'pdf',
+    type: 'pdf'
   },
   {
     id: 5,
-    title: 'Coursera ML',
+    title: 'Machine Learning by Coursera',
     file: '/certificates/Coursera-ML.pdf',
-    type: 'pdf',
+    type: 'pdf'
   },
   {
     id: 6,
-    title: 'Coursera QC',
+    title: 'Quantum Computing by Coursera',
     file: '/certificates/Coursera-QC.pdf',
-    type: 'pdf',
+    type: 'pdf'
   },
   {
     id: 8,
-    title: 'Internship Gaurav Sood',
+    title: 'Winter Internship, Gaurav Sood',
     file: '/certificates/Internship-GauravSood.jpg',
-    type: 'image',
+    type: 'image'
   },
   {
     id: 9,
-    title: 'Kaggle ML',
+    title: 'Machine Learning by Kaggle',
     file: '/certificates/Kaggle-ML.png',
-    type: 'image',
+    type: 'image'
   },
   {
     id: 7,
-    title: 'Risein Blockchain',
+    title: 'Blockchain Basics by Risein',
     file: '/certificates/Risein-Blockchain.pdf',
-    type: 'pdf',
+    type: 'pdf'
   }
 ];
