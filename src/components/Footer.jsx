@@ -1,65 +1,52 @@
 import { Link } from 'react-router-dom';
+import { profile } from '../data/site';
+import Icon from './Icon';
+import { nav, socials } from '../data/nav';
 
-const Footer = () => {
+export default function Footer() {
   return (
-    <footer className="bg-white/80 dark:bg-indigo-800/80 backdrop-blur-md py-8 border-t border-indigo-100 dark:border-indigo-800">
-      <div className="container mx-auto px-4">
-        <div className="flex flex-col md:flex-row justify-between items-center">
-          <div className="mb-6 md:mb-0">
-            <Link to="/" className="text-xl font-bold text-indigo-900 dark:text-indigo-100">
-              <span className="text-violet-500 dark:text-violet-300">Raj</span>M012
-            </Link>
-            <p className="mt-2 text-sm text-gray-600 dark:text-indigo-300">
-              Code that clicks, designs that stick.
-            </p>
-          </div>
-          
-          <div className="flex space-x-4">
-            <a 
-              href="https://github.com/rajm012" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-indigo-900 dark:text-indigo-100 hover:text-violet-500 dark:hover:text-violet-300 transition-colors"
-              aria-label="GitHub"
-            >
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-              </svg>
-            </a>
-            <a 
-              href="https://www.linkedin.com/in/raj-maurya-271b32237/" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-indigo-900 dark:text-indigo-100 hover:text-violet-500 dark:hover:text-violet-300 transition-colors"
-              aria-label="LinkedIn"
-            >
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-                <rect x="2" y="9" width="4" height="12"></rect>
-                <circle cx="4" cy="4" r="2"></circle>
-              </svg>
-            </a>
-            <a 
-              href="https://twitter.com/rajm012" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-indigo-900 dark:text-indigo-100 hover:text-violet-500 dark:hover:text-violet-300 transition-colors"
-              aria-label="Twitter"
-            >
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path>
-              </svg>
-            </a>
-          </div>
+    <footer className="mt-24 border-t border-line">
+      <div className="container grid gap-8 py-10 sm:grid-cols-[1fr_auto] sm:items-end">
+        <div>
+          <p className="font-serif text-xl">Raj Maurya</p>
+          <p className="mt-1 max-w-sm text-sm text-muted">
+            Mathematics &amp; Computing at IIT Mandi. Open to Development and Research roles.
+          </p>
+          <ul className="mt-5 flex flex-wrap gap-x-5 gap-y-2 text-sm">
+            {nav.map((n) => (
+              <li key={n.to}>
+                <Link to={n.to} className="text-muted transition-colors hover:text-fg">
+                  {n.label}
+                </Link>
+              </li>
+            ))}
+            <li>
+              <a href={profile.resume} className="text-muted transition-colors hover:text-fg">
+                Résumé
+              </a>
+            </li>
+          </ul>
         </div>
-        
-        <div className="mt-8 text-center text-sm text-gray-600 dark:text-indigo-300">
-          <p>Email: <a href="mailto:your.email@example.com" className="text-violet-500 dark:text-violet-300 hover:underline">rajmahimaurya@gmail.com</a></p>
-          <p className="mt-2">© {new Date().getFullYear()} Rajm012. All rights reserved.</p>
+        <div className="flex flex-col gap-4 sm:items-end">
+          <ul className="flex gap-1">
+            {socials.map((s) => (
+              <li key={s.label}>
+                <a
+                  href={s.href}
+                  target={s.href.startsWith('http') ? '_blank' : undefined}
+                  rel="noopener noreferrer"
+                  aria-label={s.label}
+                  title={s.label}
+                  className="grid h-9 w-9 place-items-center rounded-full text-muted transition-colors hover:bg-fg/5 hover:text-fg"
+                >
+                  <Icon name={s.icon} size={18} />
+                </a>
+              </li>
+            ))}
+          </ul>
+          <p className="font-mono text-[11px] text-subtle">© {new Date().getFullYear()} Raj Maurya</p>
         </div>
       </div>
     </footer>
   );
-};
-
-export default Footer;
+}

@@ -1,177 +1,100 @@
-import { useState } from 'react';
+import Cover from './Cover';
+import Icon from './Icon';
 
-const ProjectCard = ({ title, description, image, techStack, github, demo, tags }) => {
-  const [showDetails, setShowDetails] = useState(false);
-  const [imgError, setImgError] = useState(false);
-  
-  // Fallback to default image if project image fails to load
-  const handleImageError = () => {
-    setImgError(true);
-  };
-  
-  const imageSrc = imgError ? '/projects/default.jpg' : image;
-  
+export function ProjectLinks({ project, className = '' }) {
+  const { links = {}, private: isPrivate } = project;
+  const items = [
+    links.paper && { href: links.paper, label: 'Paper', icon: 'paper' },
+    links.code && { href: links.code, label: 'Code', icon: 'github' },
+    links.demo && { href: links.demo, label: 'Live', icon: 'external' },
+  ].filter(Boolean);
+
+  if (!items.length) {
+    return (
+      <span className={`inline-flex items-center gap-1.5 font-mono text-[11px] text-subtle ${className}`}>
+        <Icon name="lock" size={12} />
+        {isPrivate ? 'Private work' : 'Not public yet'}
+      </span>
+    );
+  }
+
   return (
-    <div className="card group flex flex-col h-full">
-      <div className="relative overflow-hidden rounded-lg mb-4 aspect-video bg-gray-100 dark:bg-indigo-700 flex-shrink-0">
-        <img 
-          src={imageSrc} 
-          alt={title} 
-          onError={handleImageError}
-          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-indigo-900/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
-          <div className="w-full">
-            <div className="flex space-x-2 mb-2">
-              {tags.map((tag, index) => (
-                <span 
-                  key={index}
-                  className="px-2 py-1 text-xs rounded-full bg-violet-500/80 dark:bg-violet-300/80 text-white dark:text-indigo-900"
-                >
-                  {tag}
-                </span>
-              ))}
-            </div>
-            <div className="flex space-x-2">
-              {github && (
-                <a 
-                  href={github} 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="p-2 rounded-full bg-white/20 hover:bg-white/40 transition-colors text-white"
-                  aria-label="GitHub repository"
-                >
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                  </svg>
-                </a>
-              )}
-              {demo && (
-                <a 
-                  href={demo} 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="p-2 rounded-full bg-white/20 hover:bg-white/40 transition-colors text-white"
-                  aria-label="Live demo"
-                >
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                    <polyline points="15 3 21 3 21 9"></polyline>
-                    <line x1="10" y1="14" x2="21" y2="3"></line>
-                  </svg>
-                </a>
-              )}
-              <button 
-                onClick={() => setShowDetails(!showDetails)}
-                className="p-2 rounded-full bg-white/20 hover:bg-white/40 transition-colors text-white"
-                aria-label="Show project details"
-              >
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <circle cx="12" cy="12" r="10"></circle>
-                  <line x1="12" y1="8" x2="12" y2="16"></line>
-                  <line x1="8" y1="12" x2="16" y2="12"></line>
-                </svg>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <h3 className="text-lg font-medium text-indigo-900 dark:text-indigo-100">{title}</h3>
-      <div className="flex flex-wrap gap-1 mt-1 mb-2">
-        {techStack.map((tech, index) => (
-          <span 
-            key={index}
-            className="text-xs px-2 py-0.5 rounded-full bg-indigo-100 dark:bg-indigo-700 text-indigo-700 dark:text-indigo-200"
-          >
-            {tech}
-          </span>
-        ))}
-      </div>
-      <p className="text-gray-600 dark:text-indigo-300 text-sm line-clamp-3 flex-grow">
-        {description}
-      </p>
-      
-      {/* Modal */}
-      {showDetails && (
-        <div className="fixed inset-0 bg-black/70 z-50 flex items-center justify-center p-4" onClick={() => setShowDetails(false)}>
-          <div 
-            className="bg-white dark:bg-indigo-800 rounded-lg max-w-3xl w-full max-h-[90vh] overflow-auto"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <div className="relative">
-              <img 
-                src={image} 
-                alt={title} 
-                className="w-full aspect-video object-cover rounded-t-lg"
-              />
-              <button 
-                onClick={() => setShowDetails(false)}
-                className="absolute top-4 right-4 p-2 rounded-full bg-black/20 hover:bg-black/40 text-white transition-colors"
-                aria-label="Close modal"
-              >
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <line x1="18" y1="6" x2="6" y2="18"></line>
-                  <line x1="6" y1="6" x2="18" y2="18"></line>
-                </svg>
-              </button>
-            </div>
-            
-            <div className="p-6">
-              <h2 className="text-2xl font-bold text-indigo-900 dark:text-indigo-100 mb-2">{title}</h2>
-              <div className="flex flex-wrap gap-1 mb-4">
-                {techStack.map((tech, index) => (
-                  <span 
-                    key={index}
-                    className="text-xs px-2 py-1 rounded-full bg-indigo-100 dark:bg-indigo-700 text-indigo-700 dark:text-indigo-200"
-                  >
-                    {tech}
-                  </span>
-                ))}
-              </div>
-              <p className="text-gray-600 dark:text-indigo-300 mb-6">
-                {description}
-              </p>
-              <div className="flex space-x-4">
-                {github && (
-                  <a 
-                    href={github} 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="btn-secondary"
-                  >
-                    <span className="flex items-center">
-                      <svg className="mr-2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                      </svg>
-                      View Code
-                    </span>
-                  </a>
-                )}
-                {demo && (
-                  <a 
-                    href={demo} 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="btn-primary"
-                  >
-                    <span className="flex items-center">
-                      <svg className="mr-2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                        <polyline points="15 3 21 3 21 9"></polyline>
-                        <line x1="10" y1="14" x2="21" y2="3"></line>
-                      </svg>
-                      Live Demo
-                    </span>
-                  </a>
-                )}
-              </div>
-            </div>
-          </div>
-        </div>
-      )}
+    <div className={`flex flex-wrap gap-x-4 gap-y-1 ${className}`}>
+      {items.map((l) => (
+        <a
+          key={l.label}
+          href={l.href}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-1.5 text-sm font-medium text-fg transition-colors hover:text-accent"
+          aria-label={`${project.title} — ${l.label}`}
+        >
+          <Icon name={l.icon} size={14} />
+          {l.label}
+        </a>
+      ))}
     </div>
   );
-};
+}
 
-export default ProjectCard;
+export default function ProjectCard({ project }) {
+  const { slug, title, year, category, summary, stack = [], image, badge, team } = project;
+  return (
+    <article className="card group flex h-full flex-col overflow-hidden transition-shadow hover:shadow-[0_6px_24px_-12px_rgb(0_0_0/0.18)]">
+      <div className="relative aspect-[16/10] overflow-hidden border-b border-line bg-bg">
+        {image ? (
+          <img
+            src={image}
+            alt={`${title} screenshot`}
+            loading="lazy"
+            decoding="async"
+            className="h-full w-full object-cover object-top transition-transform duration-500 group-hover:scale-[1.02]"
+          />
+        ) : (
+          <Cover seed={slug} />
+        )}
+        {badge && (
+          <span className="absolute left-3 top-3 rounded-full border border-line bg-surface/90 px-2.5 py-1 font-mono text-[10.5px] text-fg backdrop-blur">
+            {badge}
+          </span>
+        )}
+      </div>
+      <div className="flex flex-1 flex-col p-5">
+        <div className="eyebrow flex items-center justify-between">
+          <span>{category}</span>
+          <span>{year}</span>
+        </div>
+        <h3 className="mt-2 text-[1.4rem] leading-tight">{title}</h3>
+        {team && <p className="mt-0.5 text-xs text-subtle">{team}</p>}
+        <p className="mt-2 flex-1 text-[14.5px] leading-relaxed text-muted">{summary}</p>
+        <ul className="mt-4 flex flex-wrap gap-1.5" aria-label="Built with">
+          {stack.map((s) => (
+            <li key={s} className="chip">
+              {s}
+            </li>
+          ))}
+        </ul>
+        <ProjectLinks project={project} className="mt-4 border-t border-line pt-4" />
+      </div>
+    </article>
+  );
+}
+
+export function ProjectRow({ project }) {
+  const { title, year, category, summary, stack = [] } = project;
+  return (
+    <li className="grid gap-x-6 gap-y-2 border-b border-line py-5 sm:grid-cols-[minmax(0,13rem)_minmax(0,1fr)_auto]">
+      <div>
+        <h3 className="font-sans text-[15px] font-semibold leading-snug">{title}</h3>
+        <p className="eyebrow mt-1">
+          {category} · {year}
+        </p>
+      </div>
+      <div className="min-w-0">
+        <p className="text-[14.5px] text-muted">{summary}</p>
+        <p className="mt-1.5 font-mono text-[11px] text-subtle">{stack.join(' · ')}</p>
+      </div>
+      <ProjectLinks project={project} className="sm:justify-end sm:pt-0.5" />
+    </li>
+  );
+}

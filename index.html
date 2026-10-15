@@ -2,10 +2,38 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/src/index.css" />
-    <title>Rajm012</title>
+    <title>Raj Maurya — Mathematics &amp; Computing, IIT Mandi</title>
+    <meta
+      name="description"
+      content="Raj Maurya — B.Tech Mathematics & Computing at IIT Mandi. Physics-informed neural networks, quantitative finance and full-stack engineering."
+    />
+    <meta name="author" content="Raj Maurya" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <meta name="theme-color" content="#f7f5f0" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#151513" media="(prefers-color-scheme: dark)" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://rajm012.vercel.app/" />
+    <meta property="og:title" content="Raj Maurya" />
+    <meta
+      property="og:description"
+      content="Physics-informed neural networks, quantitative finance and full-stack engineering. B.Tech Mathematics & Computing, IIT Mandi."
+    />
+    <meta property="og:image" content="https://rajm012.vercel.app/og.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Apply the saved or system theme before first paint to avoid a flash. -->
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem('theme');
+          var dark = saved ? saved === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
+          if (dark) document.documentElement.classList.add('dark');
+        } catch (e) {}
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>
