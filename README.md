@@ -7,8 +7,6 @@
 
 <p>
   <a href="https://rajm012.vercel.app">Website</a> ·
-  <a href="https://arxiv.org/abs/2610.10449">arXiv</a> ·
-  <a href="https://orcid.org/0009-0005-8225-5852">ORCID</a> ·
   <a href="https://www.linkedin.com/in/raj-maurya-271b32237/">LinkedIn</a> ·
   <a href="mailto:rajmahimaurya@gmail.com">rajmahimaurya@gmail.com</a> ·
   <a href="https://rajm012.vercel.app/Raj-Maurya-Resume.pdf">Résumé</a>
