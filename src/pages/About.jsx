@@ -23,10 +23,10 @@ export default function About() {
         <PageHead eyebrow="About" title="Hi, I’m Raj.">
           <div className="space-y-4">
             <p>
-              I’m a final-year Mathematics &amp; Computing student at IIT Mandi. I started coding in my first year out of plain curiosity, and it turned into a habit of building — first small web apps, then security tools, then models.
+              I’m a final-year Mathematics &amp; Computing student at IIT Mandi, focused on software development and deep learning. I build full-stack applications, backend services and desktop tools, taking a problem from requirements and design through implementation, testing and delivery.
             </p>
             <p>
-              These days most of my time goes into physics-informed neural networks: networks that learn the solution of a differential equation from the equation itself. I like the part where the mathematics decides the architecture — a change of variables that removes a singularity, an ansatz that makes a boundary condition exact. Alongside that I study quantitative finance and keep shipping full-stack products, because building something people use is how I recharge.
+              On the deep learning side, I work on computer vision and physics-informed neural networks. My research explores how equations and boundary conditions can shape a model’s architecture; SAGE-PINN and SAFE-PINN are both under review. I also study stochastic models of markets, bringing the same emphasis on problem diagnosis, careful evaluation and working implementations to software and models.
             </p>
             <p>
               Away from the keyboard I read Hindi sahitya and philosophy, watch far too many films, and run or cycle when the Mandi weather allows.

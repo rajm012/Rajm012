@@ -1,33 +1,169 @@
-<h1>Raj Maurya</h1>
-
-<p>
-  <b>B.Tech Mathematics &amp; Computing · IIT Mandi (2023 – 2027)</b><br/>
-  Physics-informed neural networks, quantitative finance and full-stack engineering.
+<p align="center">
+  <img src="public/profile-banner.svg" alt="Raj Maurya — Software Developer and Deep Learning Engineer" width="100%" />
 </p>
 
-<p>
-  <a href="https://rajm012.vercel.app">Website</a> ·
-  <a href="https://www.linkedin.com/in/raj-maurya-271b32237/">LinkedIn</a> ·
-  <a href="mailto:rajmahimaurya@gmail.com">rajmahimaurya@gmail.com</a> ·
-  <a href="https://rajm012.vercel.app/Raj-Maurya-Resume.pdf">Résumé</a>
+<p align="center">
+  <b>Software Developer · Deep Learning Engineer</b><br/>
+  B.Tech Mathematics &amp; Computing · IIT Mandi · 2023–2027
 </p>
 
----
+<p align="center">
+  <a href="https://rajm012.vercel.app"><b>🌐 Portfolio</b></a> &nbsp; / &nbsp;
+  <a href="https://rajm012.vercel.app/projects"><b>🛠 Projects</b></a> &nbsp; / &nbsp;
+  <a href="https://rajm012.vercel.app/Raj-Maurya-Resume.pdf"><b>📄 Résumé</b></a> &nbsp; / &nbsp;
+  <a href="https://www.linkedin.com/in/raj-maurya-271b32237/"><b>LinkedIn</b></a> &nbsp; / &nbsp;
+  <a href="mailto:rajmahimaurya@gmail.com"><b>Say hello</b></a>
+</p>
 
-I build physics-informed models — and the software around them. Most of my time goes into **PINNs for fluid dynamics**: neural networks that learn the solution of a differential equation from the equation itself, where a well-chosen change of variables or ansatz does more than another layer. Alongside that I study **stochastic models of markets** and keep shipping **full-stack products**.
+I build **software people can use** and **deep learning models you can evaluate**. My work spans full-stack products, backend systems, desktop applications, computer vision and scientific ML. Mathematics gives me tools for diagnosing a problem; engineering turns the solution into something that runs.
 
-## Research
+| 🏁 AMEX CodeStreet 2026 | 🛠 Repository catalog | 🧠 Deep learning papers | 🎓 IIT Mandi |
+|:---:|:---:|:---:|:---:|
+| **Top 6 finalist** | **31 repositories** | **2 under review** | **8.73 / 10 CGPA** |
 
-**SAGE-PINN: A Singularity-free Axisymmetric Geometry-Encoded Physics-Informed Neural Network for Axisymmetric Multiphysics Flow**
-<br/>**Raj Maurya**, Joyprakash Akhuli, Doyel Pandey — [arXiv:2610.10449](https://arxiv.org/abs/2610.10449) (2026), submitted to *Journal of Computational Physics*
+## ⚡ Build things. Train models. Make them work.
 
-> Removes the 1/r axis singularity of cylindrical PINNs by construction (s = r², a modified stream function, exact boundary ansätze). Trained on physics alone, one setup solves 40 nanofluid stenosis cases (Re 0.46–128, Pe 10.5–2330) to within 1.6% axial-velocity error against finite-element references.
+<table>
+<tr>
+<td width="50%" valign="top">
+<h3>🛠 Software engineering</h3>
+<p>Product requirements → system design → implementation → testing → delivery.</p>
+<p>Full-stack applications, streaming dashboards, collaborative tools, Linux desktop apps and production feature delivery.</p>
+<p><b>React · Next.js · Node.js · FastAPI · PostgreSQL · Docker</b></p>
+</td>
+<td width="50%" valign="top">
+<h3>🧠 Deep learning engineering</h3>
+<p>Problem formulation → data and physics → model design → training → evaluation.</p>
+<p>Computer vision, contrastive learning, physics-informed neural networks and stochastic market models.</p>
+<p><b>PyTorch · TensorFlow · OpenCV · PINNs · NumPy / SciPy</b></p>
+</td>
+</tr>
+</table>
 
-Also: **SAFE-PINN** for electroosmotic flow in cylindrical nanochannels (submitted, under review), public replications of [near-wall blood flow](https://github.com/rajm012/Blood-flow-via-PINNs) and [wavy-channel flow](https://github.com/rajm012/Unsupervised-PINNs-for-Flow-Dynamics-in-Wavy-Channel), and [Neuro-Trade](https://github.com/rajm012/Neuro-Trade-via-PINNs) — Fokker–Planck PINNs for Indian equities. Newer work includes neural-network superhedging and exploratory paper-based soil sensing.
+**How I work:** problem diagnosis · solution design · trade-off analysis · agile delivery.
 
-## Projects & repositories
+## 🚀 A few things I’ve shipped
 
-Current catalog: **31 repositories — 22 public and 9 private**, checked on 8 November 2026. The portfolio includes every owned repository, including the GenWeb fork, coursework, and résumé sources. Private work is described briefly without source links.
+<table>
+<tr>
+<td width="33%" valign="top">
+<a href="https://github.com/rajm012/JourneySync"><img src="public/projects/JourneySync.png" alt="JourneySync customer journey dashboard" width="100%" /></a>
+<h3>JourneySync</h3>
+<p>Cross-channel identity resolution and customer journey stitching. Team Cinephiles, <b>AMEX CodeStreet 2026 finalist</b>.</p>
+<p>Python · PostgreSQL · TypeScript · Docker</p>
+</td>
+<td width="33%" valign="top">
+<a href="https://bytechat.in"><img src="public/projects/ByteChat.png" alt="ByteChat campus community app" width="100%" /></a>
+<h3>ByteChat</h3>
+<p>Anonymous, encrypted chat for the IIT Mandi community. A product with real users and a live home at <a href="https://bytechat.in">bytechat.in</a>.</p>
+<p>Next.js · Supabase · PostgreSQL · AWS</p>
+</td>
+<td width="33%" valign="top">
+<a href="https://verseflow-linux.netlify.app/"><img src="public/projects/VerseFlow.png" alt="VerseFlow Linux lyrics app website" width="100%" /></a>
+<h3>VerseFlow</h3>
+<p>Animated lyrics synchronized with Linux music players. A Linux adaptation of the open-source <b>Constelyric</b> project.</p>
+<p>Python · PyQt6 · MPRIS · D-Bus</p>
+</td>
+</tr>
+</table>
+
+## 📄 Projects from my résumé
+
+| Project | What I built | Stack |
+|---|---|---|
+| [**GenWeb**](https://github.com/rajm012/GenWeb) | Collaborative AI website builder: natural-language briefs, agent-driven scaffolding, build and deployment, live previews and authentication. | Next.js · React · Supabase · Clerk · LLM agents |
+| [**NetSentinel**](https://github.com/rajm012/NetSentinel) | Streaming network telemetry, anomaly and threat detection, and operator dashboards that turn packet data into actionable alerts. | FastAPI · React · Scapy · Python |
+| [**MovieFlix**](https://github.com/rajm012/MovieFlix) | Full-stack ticket booking and theatre operations: seat selection, payments, confirmations and separate user and admin workflows. | React · Node.js · Express · MongoDB |
+| [**C-TAEA**](https://github.com/rajm012/CTAEA-Implementation) | IEEE TEVC paper replication and constrained multi-objective benchmarks, evaluating convergence, solution diversity and feasibility. | Python · pymoo · Evolutionary algorithms |
+| [**Deepfake Detection**](https://github.com/rajm012/Deepfake-Detection) | Unsupervised video detection using facial cues, pseudo-labels and enhanced contrastive learning. | PyTorch · EfficientNet · dlib · MTCNN |
+
+**Hardware, too:** an IoT-enabled **portable oxygen concentrator prototype** for low-resource settings, plus a [path-recording memory robot](https://github.com/rajm012/To-and-Fro-Memory-Robot) with code, CAD and PCB design.
+
+## 🤖 A little company for the desktop
+
+**Desktop Buddy** brings Bolt, Boo and Mochi to the Linux desktop: window perching, local reminders, optional media controls and a focus timer. The code is private; the screenshots are here.
+
+<a href="https://rajm012.vercel.app/projects#desktop-buddy">
+  <img src="public/projects/desktop-buddy.webp" alt="Eight Desktop Buddy screenshots: Bolt idle, walking, running, jumping, falling, landing, dancing and sleeping" width="100%" />
+</a>
+
+[**Meet Bolt in the screenshot gallery →**](https://rajm012.vercel.app/projects#desktop-buddy)
+
+## 🧪 Deep learning, with the equations included
+
+My research is part of my deep learning work: choosing representations, building trainable models and checking them against numerical references.
+
+### SAGE-PINN · Under review at Journal of Computational Physics
+
+**A Singularity-free Axisymmetric Geometry-Encoded Physics-Informed Neural Network for Axisymmetric Multiphysics Flow in Cylindrical Coordinates**
+
+Raj Maurya, Joyprakash Akhuli, Doyel Pandey · [arXiv:2610.10449](https://arxiv.org/abs/2610.10449)
+
+Removes the cylindrical-axis singularity by construction using `s = r²`, a modified stream function and exact boundary ansätze. One configuration solves **40 nanofluid cases** from physics alone, with **1.6% axial-velocity error** over the central operating range against finite-element references.
+
+### SAFE-PINN · Under review at Physics of Fluids, special issue
+
+**A Singularity-Free Physics-Informed Neural Network for Electroosmotic Flow in a Cylindrical Nanochannel with Axially Varying Zeta Potential**
+
+Raj Maurya, Doyel Pandey, Somchai Wongwises. Coupled Poisson–Nernst–Planck and Stokes electroosmotic flow, with a model designed around the governing equations. Full manuscript and source code remain private.
+
+[**Paper previews and research details →**](https://rajm012.vercel.app/research)
+
+## 🔭 On my workbench
+
+| Work | Direction |
+|---|---|
+| [**Neuro-Trade via PINNs**](https://github.com/rajm012/Neuro-Trade-via-PINNs) | Indian market dynamics through SDEs, Fokker–Planck equations and learned drift/diffusion. |
+| **EXOCORTEX** | A personal knowledge bank and digital-twin direction: books, films, study, projects, topic maps and a time ledger. |
+| **Neural-network superhedging** | Paper replication and pricing experiments, with dynamic-method validation in progress. |
+| **Paper-based soil analysis** | Exploratory research into low-cost nutrient assays read by a smartphone camera. |
+| [**Blood-flow PINNs**](https://github.com/rajm012/Blood-flow-via-PINNs) / [**Wavy-channel PINNs**](https://github.com/rajm012/Unsupervised-PINNs-for-Flow-Dynamics-in-Wavy-Channel) | Public fluid-dynamics replications with COMSOL references and ongoing evaluation. |
+
+## 🧭 Experience that shapes how I build
+
+**Software Development Intern · Pinch · May–July 2026**
+
+- Shipped and tested production features within an agile engineering team.
+- Translated product requirements into scoped, reviewable delivery increments.
+- Validated releases with design and QA, documenting edge cases before handoff.
+
+**Teaching Assistant · Himshikhar, IIT Mandi · May–July 2026**
+
+- Mentored undergraduate cohorts and explained concepts to mixed audiences.
+- Supported course delivery and assessment under fixed academic deadlines.
+- Managed competing priorities across concurrent student groups.
+
+**Deep Learning Research · IIT Mandi, with Dr. Doyel Pandey · 2026–present**
+
+Model design and evaluation for physics-informed fluid dynamics; SAGE-PINN and SAFE-PINN are both under review.
+
+**Research Intern · IIT Mandi · December 2024–January 2025**
+
+Studied NP-complete classes, formal reductions and approximation, decomposing hard problems into tractable sub-problems.
+
+**Research Society, IIT Mandi · Member since 2024**
+
+## 🧰 Toolbox
+
+| Area | Tools & ideas |
+|---|---|
+| Languages | Python · C++ · JavaScript / TypeScript · Bash · SQL |
+| Software & cloud | React · Next.js · React Native · Node.js · Express · GraphQL · FastAPI · Flask · Docker · Git · Linux |
+| Data | PostgreSQL · Supabase · MongoDB · NumPy · SciPy · pandas |
+| Deep learning & vision | PyTorch · TensorFlow · Keras · scikit-learn · OpenCV · contrastive learning |
+| Mathematical modelling | PINNs · ODEs / PDEs · SDEs · Fokker–Planck · optimisation · stochastic modelling |
+| Scientific computing | COMSOL Multiphysics · MATLAB · Qiskit · pymoo · quantitative finance |
+
+**Education:** B.Tech Mathematics & Computing, IIT Mandi, 2023–2027 · **CGPA 8.73/10**. Coursework includes DSA, linear algebra, optimisation, mathematical modelling, ML, deep learning, ODEs/PDEs, probability and statistics, computer networks and quantitative finance.
+
+**Certifications:** [Machine Learning](public/certificates/Coursera-ML.pdf), Coursera / Andrew Ng · [Quantum Computing](public/certificates/Coursera-QC.pdf), Coursera · [Dynamic Programming](public/certificates/Coursera-DP.pdf), Coursera.
+
+**Away from the terminal:** Hindi sahitya, philosophy, films, music, running and cycling. English / Hindi.
+
+<details>
+<summary><b>📦 Full repository catalog · 22 public + 9 private</b></summary>
+
+Checked on 8 November 2026. Every owned repository is included, with private work described without source links.
 
 | Repository | What it is | Visibility |
 |---|---|---|
@@ -63,23 +199,12 @@ Current catalog: **31 repositories — 22 public and 9 private**, checked on 8 N
 | Fin-Eng--Assignment-1 | Martingales, Brownian motion, Markov chains and Monte Carlo | Private |
 | [To-and-Fro-Memory-Robot](https://github.com/rajm012/To-and-Fro-Memory-Robot) | Path-recording robot · code, CAD and PCB design | Public |
 
-Browse all projects, with search and category filters: **[rajm012.vercel.app/projects](https://rajm012.vercel.app/projects)**
+</details>
 
-## Experience
+[**Browse all 31 repositories with search and category filters →**](https://rajm012.vercel.app/projects)
 
-- **Research, physics-informed ML for fluid dynamics** — IIT Mandi, with Dr. Doyel Pandey · 2026 – now
-- **Software Development Intern** — Pinch · May – Jul 2026
-- **Teaching Assistant, Software Development with AI** — Himshikhar, IIT Mandi · May – Jul 2026
-- **Research Intern, computational complexity** — IIT Mandi · Dec 2024 – Jan 2025
-- **Core Member** — Research Society, IIT Mandi · 2024 – now
-
-## Toolbox
-
-**Languages** Python, JavaScript/TypeScript, C++, Bash, SQL
-**ML & scientific** PyTorch, TensorFlow, scikit-learn, NumPy/SciPy, COMSOL Multiphysics, MATLAB, Qiskit
-**Modelling** PINNs, ODEs/PDEs, SDEs, Fokker–Planck, optimisation
-**Web & infra** React, Next.js, React Native, Node/Express, GraphQL, FastAPI, Flask, PostgreSQL, Supabase, Docker
-## Running the portfolio
+<details>
+<summary><b>🛠 Run this portfolio locally</b></summary>
 
 ```bash
 npm ci
@@ -88,4 +213,14 @@ npm run lint
 npm run build
 ```
 
-Project summaries, repository names, visibility and demo links live in `src/data/projects.js`. Research study links use the same catalog. Recheck GitHub when adding, removing or changing the visibility of a repository; keep private source links out of the public site.
+Project summaries, images, galleries, repository names and visibility live in `src/data/projects.js`. Research study links use the same catalog. Recheck GitHub when a repository is added, removed or changes visibility.
+
+</details>
+
+---
+
+<p align="center">
+  <b>Have a product to ship or a model to build?</b><br/>
+  Open to software development and deep learning roles, and collaborations in computer vision and scientific computing.<br/>
+  <a href="mailto:rajmahimaurya@gmail.com">rajmahimaurya@gmail.com</a> · <a href="https://www.linkedin.com/in/raj-maurya-271b32237/">LinkedIn</a>
+</p>

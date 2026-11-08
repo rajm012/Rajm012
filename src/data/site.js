@@ -1,10 +1,10 @@
 export const profile = {
   name: 'Raj Maurya',
   handle: 'rajm012',
-  role: 'Mathematics & Computing · IIT Mandi',
-  headline: 'I build physics-informed models — and the software around them.',
+  role: 'Software Developer · Deep Learning Engineer',
+  headline: 'I build software and deep learning models.',
   intro:
-    'Final-year B.Tech student at IIT Mandi working where differential equations meet deep learning: PINNs for fluid dynamics, stochastic models of markets, and the full-stack systems that put them in front of people.',
+    'Final-year Mathematics & Computing student at IIT Mandi. I build full-stack products, backend systems and desktop tools, and develop deep learning models for computer vision and scientific computing. My research in physics-informed neural networks connects model design with differential equations.',
   location: 'Mandi, Himachal Pradesh, India',
   email: 'rajmahimaurya@gmail.com',
   resume: '/Raj-Maurya-Resume.pdf',
@@ -18,40 +18,47 @@ export const profile = {
 
 export const now = [
   {
-    label: 'Research',
-    text: 'SAFE-PINN is under review — electroosmotic flow in nanochannels with coupled Poisson–Nernst–Planck and Stokes equations.',
-  },
-  {
-    label: 'Thesis',
-    text: 'Major Technical Project in Fluid Dynamics at IIT Mandi.',
-  },
-  {
-    label: 'Building',
+    label: 'Software',
     text: 'VerseFlow, synchronized Linux lyrics; Desktop Buddy and EXOCORTEX, a personal knowledge bank.',
+  },
+  {
+    label: 'Deep learning',
+    text: 'SAGE-PINN and SAFE-PINN — physics-informed deep learning for fluid dynamics, both under review.',
+  },
+  {
+    label: 'Quant',
+    text: 'Neuro-Trade for Indian market dynamics and neural-network superhedging experiments.',
   },
 ];
 
 export const experience = [
   {
-    role: 'Research — Physics-informed ML for fluid dynamics',
-    org: 'IIT Mandi, with Dr. Doyel Pandey',
-    period: '2026 — now',
-    points: [
-      'First author of SAGE-PINN (arXiv 2610.10449), a singularity-free PINN for axisymmetric multiphysics flow, submitted to the Journal of Computational Physics.',
-      'Co-author of SAFE-PINN, a follow-up on electroosmotic flow in nanochannels, submitted and under review.',
-    ],
-  },
-  {
     role: 'Software Development Intern',
     org: 'Pinch',
     period: 'May — Jul 2026',
-    points: ['Built and tested features for a React Native app with an Express + GraphQL backend, inside an agile team.'],
+    points: [
+      'Shipped and tested production features for a React Native app with an Express + GraphQL backend in an agile team.',
+      'Translated product requirements into scoped, reviewable delivery increments.',
+      'Validated releases with design and QA, documenting edge cases before handoff.',
+    ],
+  },
+  {
+    role: 'Deep Learning Research — Physics-informed models',
+    org: 'IIT Mandi, with Dr. Doyel Pandey',
+    period: '2026 — now',
+    points: [
+      'First author of SAGE-PINN (arXiv 2610.10449), a singularity-free PINN for axisymmetric multiphysics flow, under review at the Journal of Computational Physics.',
+      'Co-author of SAFE-PINN for electroosmotic flow in nanochannels, under review at Physics of Fluids (special issue).',
+    ],
   },
   {
     role: 'Teaching Assistant — Software Development with AI',
     org: 'Himshikhar, IIT Mandi',
     period: 'May — Jul 2026',
-    points: ['Ran labs and mentored students on building software with AI tools.'],
+    points: [
+      'Mentored undergraduate cohorts and ran labs on building software with AI tools.',
+      'Supported course delivery and assessment under fixed deadlines while managing concurrent student groups.',
+    ],
   },
   {
     role: 'Research Intern — Computational complexity',
@@ -63,7 +70,7 @@ export const experience = [
 
 export const achievements = [
   { title: 'AMEX CodeStreet 2026 — Finalist', detail: 'Top 6 teams nationally with JourneySync, a real-time journey-stitching platform.' },
-  { title: 'SAGE-PINN preprint', detail: 'First-author paper on arXiv; under submission to J. Comput. Phys.' },
+  { title: 'Two deep learning papers under review', detail: 'SAGE-PINN at Journal of Computational Physics; SAFE-PINN at Physics of Fluids.' },
   { title: 'C-TAEA replication', detail: 'Full re-implementation of an IEEE TEVC constrained multi-objective algorithm.' },
   { title: 'Portable oxygen concentrator', detail: 'IoT-enabled prototype for low-resource settings.' },
 ];

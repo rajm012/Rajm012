@@ -8,9 +8,9 @@ export const papers = [
     title:
       'SAGE-PINN: A Singularity-free Axisymmetric Geometry-Encoded Physics-Informed Neural Network for Axisymmetric Multiphysics Flow in Cylindrical Coordinates',
     authors: ['Raj Maurya', 'Joyprakash Akhuli', 'Doyel Pandey'],
-    venue: 'arXiv 2610.10449 · submitted to Journal of Computational Physics',
+    venue: 'arXiv 2610.10449 · under review at Journal of Computational Physics',
     year: 2026,
-    status: 'Preprint',
+    status: 'Under review',
     summary:
       'PINNs in cylindrical coordinates carry 1/r terms that blow up on the axis. SAGE-PINN removes the singularity by construction.',
     links: { paper: 'https://arxiv.org/abs/2610.10449', pdf: 'https://arxiv.org/pdf/2610.10449' },
@@ -20,7 +20,7 @@ export const papers = [
     slug: 'eof-pinn',
     title: 'SAFE-PINN: A Singularity-Free Physics-Informed Neural Network for Electroosmotic Flow in a Cylindrical Nanochannel with Axially Varying Zeta Potential',
     authors: ['Raj Maurya', 'Doyel Pandey', 'Somchai Wongwises'],
-    venue: 'Submitted manuscript',
+    venue: 'Under review at Physics of Fluids · special issue',
     year: 2026,
     status: 'Under review',
     summary:

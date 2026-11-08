@@ -85,6 +85,18 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Projects */}
+      <section className="container pt-20 sm:pt-24">
+        <SectionHead eyebrow="Projects" title="Selected work" to="/projects" action={`All ${projects.length} projects`} />
+        <ul className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          {featuredProjects.map((p) => (
+            <li key={p.slug}>
+              <ProjectCard project={p} />
+            </li>
+          ))}
+        </ul>
+      </section>
+
       {/* Research */}
       <section className="container pt-20 sm:pt-24">
         <SectionHead eyebrow="Research" title="Selected research" to="/research" action="All research" />
@@ -126,18 +138,6 @@ export default function Home() {
         </article>
       </section>
 
-      {/* Projects */}
-      <section className="container pt-20 sm:pt-24">
-        <SectionHead eyebrow="Projects" title="Selected work" to="/projects" action={`All ${projects.length} projects`} />
-        <ul className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {featuredProjects.map((p) => (
-            <li key={p.slug}>
-              <ProjectCard project={p} />
-            </li>
-          ))}
-        </ul>
-      </section>
-
       {/* Experience + highlights */}
       <section className="container grid gap-14 pt-20 sm:pt-24 lg:grid-cols-[1.4fr_1fr] lg:gap-16">
         <div>
@@ -172,7 +172,7 @@ export default function Home() {
           <div>
             <h2 className="text-[1.75rem] leading-tight sm:text-3xl">Working on something hard?</h2>
             <p className="mt-2 max-w-prose text-muted">
-              I'm open to research collaborations and full-time roles in Development, ML, scientific computing and engineering.
+              I’m open to software development and deep learning roles, and collaborations in computer vision and scientific computing.
             </p>
           </div>
           <Link to="/contact" className="btn btn-primary shrink-0">

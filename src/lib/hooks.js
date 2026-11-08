@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useState } from 'react';
+import { profile } from '../data/site.js';
 
 const prefersDark = () => window.matchMedia('(prefers-color-scheme: dark)').matches;
 
@@ -41,10 +42,10 @@ export function useTheme() {
   return { dark, toggle };
 }
 
-const SITE = 'Raj Maurya';
+const SITE = profile.name;
 
 export function useTitle(title) {
   useEffect(() => {
-    document.title = title ? `${title} — ${SITE}` : `${SITE} — Mathematics & Computing, IIT Mandi`;
+    document.title = title ? `${title} — ${SITE}` : `${SITE} — ${profile.role}`;
   }, [title]);
 }

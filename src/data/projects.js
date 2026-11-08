@@ -331,6 +331,17 @@ export const projects = [
     summary:
       'Bolt, Boo and Mochi live on the Linux desktop: animated companions with window perching, local reminders, a focus timer and optional media controls.',
     stack: ['Python', 'PyQt6', 'QPainter', 'X11'],
+    image: '/projects/desktop-buddy.webp',
+    gallery: [
+      { src: '/projects/desktop-buddy/bolt-idle.png', alt: 'Bolt standing idle', caption: 'Idle' },
+      { src: '/projects/desktop-buddy/bolt-walk.png', alt: 'Bolt walking', caption: 'Walk' },
+      { src: '/projects/desktop-buddy/bolt-run.png', alt: 'Bolt running', caption: 'Run' },
+      { src: '/projects/desktop-buddy/bolt-jump.png', alt: 'Bolt jumping', caption: 'Jump' },
+      { src: '/projects/desktop-buddy/bolt-fall.png', alt: 'Bolt falling', caption: 'Fall' },
+      { src: '/projects/desktop-buddy/bolt-land.png', alt: 'Bolt landing', caption: 'Land' },
+      { src: '/projects/desktop-buddy/bolt-dance.png', alt: 'Bolt dancing', caption: 'Dance' },
+      { src: '/projects/desktop-buddy/bolt-sleep.png', alt: 'Bolt sleeping', caption: 'Sleep' },
+    ],
     private: true,
   },
   {

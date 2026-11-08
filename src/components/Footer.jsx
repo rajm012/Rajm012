@@ -10,7 +10,7 @@ export default function Footer() {
         <div>
           <p className="font-serif text-xl">Raj Maurya</p>
           <p className="mt-1 max-w-sm text-sm text-muted">
-            Mathematics &amp; Computing at IIT Mandi. Open to Development and Research roles.
+            Software development and deep learning. Mathematics &amp; Computing at IIT Mandi.
           </p>
           <ul className="mt-5 flex flex-wrap gap-x-5 gap-y-2 text-sm">
             {nav.map((n) => (

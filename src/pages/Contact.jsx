@@ -24,7 +24,7 @@ export default function Contact() {
   return (
     <div className="container">
       <PageHead eyebrow="Contact" title="Let’s talk">
-        Research collaborations, Full-time roles or just a Hard problem - email is fastest, and the form below lands in the same inbox.
+        Software development and deep learning roles, collaborations or a hard problem — email is fastest, and the form below lands in the same inbox.
       </PageHead>
 
       <div className="grid gap-12 lg:grid-cols-[1fr_20rem] lg:gap-16">

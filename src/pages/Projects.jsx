@@ -1,10 +1,13 @@
 import { useMemo, useState } from 'react';
 import Icon from '../components/Icon';
 import ProjectCard, { ProjectRow } from '../components/ProjectCard';
+import ProjectGallery from '../components/ProjectGallery';
 import { PageHead } from '../components/Section';
 import { categories, featuredProjects, projects, projectYears, repositoryStats } from '../data/projects';
 import { profile } from '../data/site';
 import { useTitle } from '../lib/hooks';
+
+const galleryProjects = projects.filter((project) => project.gallery?.length);
 
 export default function Projects() {
   useTitle('Projects');
@@ -48,6 +51,8 @@ export default function Projects() {
           ))}
         </ul>
       </section>
+
+      {galleryProjects.map((project) => <ProjectGallery key={project.slug} project={project} />)}
 
       <section aria-labelledby="all" className="pt-20">
         <div className="mb-6 flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">

@@ -1,12 +1,14 @@
+import { Link } from 'react-router-dom';
 import Cover from './Cover';
 import Icon from './Icon';
 
 export function ProjectLinks({ project, className = '' }) {
-  const { links = {}, private: isPrivate, fork } = project;
+  const { links = {}, private: isPrivate, fork, gallery } = project;
   const items = [
     links.paper && { href: links.paper, label: 'Paper', icon: 'paper' },
     !isPrivate && links.code && { href: links.code, label: 'Code', icon: 'github' },
     links.demo && { href: links.demo, label: 'Live', icon: 'external' },
+    gallery?.length && { href: `/projects#${project.slug}`, label: 'Gallery', icon: 'external', internal: true },
   ].filter(Boolean);
 
   if (!items.length) {
@@ -20,19 +22,20 @@ export function ProjectLinks({ project, className = '' }) {
 
   return (
     <div className={`flex flex-wrap gap-x-4 gap-y-1 ${className}`}>
-      {items.map((l) => (
-        <a
-          key={l.label}
-          href={l.href}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center gap-1.5 text-sm font-medium text-fg transition-colors hover:text-accent"
-          aria-label={`${project.title} — ${l.label}`}
-        >
-          <Icon name={l.icon} size={14} />
-          {l.label}
-        </a>
-      ))}
+      {items.map((l) => {
+        const LinkComponent = l.internal ? Link : 'a';
+        return (
+          <LinkComponent
+            key={l.label}
+            {...(l.internal ? { to: l.href } : { href: l.href, target: '_blank', rel: 'noopener noreferrer' })}
+            className="inline-flex items-center gap-1.5 text-sm font-medium text-fg transition-colors hover:text-accent"
+            aria-label={`${project.title} — ${l.label}`}
+          >
+            <Icon name={l.icon} size={14} />
+            {l.label}
+          </LinkComponent>
+        );
+      })}
       {isPrivate && (
         <span className="inline-flex items-center gap-1.5 font-mono text-[11px] text-subtle">
           <Icon name="lock" size={12} />
