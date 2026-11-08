@@ -8,6 +8,7 @@ export function ProjectLinks({ project, className = '' }) {
     links.paper && { href: links.paper, label: 'Paper', icon: 'paper' },
     !isPrivate && links.code && { href: links.code, label: 'Code', icon: 'github' },
     links.demo && { href: links.demo, label: 'Live', icon: 'external' },
+    links.download && { href: links.download, label: 'Download', icon: 'download' },
     gallery?.length && { href: `/projects#${project.slug}`, label: 'Gallery', icon: 'external', internal: true },
   ].filter(Boolean);
 

@@ -1,3 +1,5 @@
+import Icon from './Icon';
+
 export default function ProjectGallery({ project }) {
   return (
     <section id={project.slug} aria-labelledby={`${project.slug}-gallery`} className="scroll-mt-24 pt-20">
@@ -10,6 +12,12 @@ export default function ProjectGallery({ project }) {
           A little robot that walks, dances and perches on your windows, with local reminders and a focus timer.
           Open a pose for a closer look.
         </p>
+        {project.links.download && (
+          <a href={project.links.download} target="_blank" rel="noopener noreferrer" className="btn btn-primary mt-4">
+            <Icon name="download" size={15} />
+            Download for Linux
+          </a>
+        )}
       </div>
       <ul className="grid grid-cols-2 gap-3 sm:grid-cols-4 sm:gap-4" aria-label="Desktop Buddy screenshots">
         {project.gallery.map((shot) => (

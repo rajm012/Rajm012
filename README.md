@@ -81,13 +81,13 @@ I build **software people can use** and **deep learning models you can evaluate*
 
 ## 🤖 A little company for the desktop
 
-**Desktop Buddy** brings Bolt, Boo and Mochi to the Linux desktop: window perching, local reminders, optional media controls and a focus timer. The code is private; the screenshots are here.
+**Desktop Buddy** brings Bolt, Boo-ombastic and Mochi to the Linux desktop: window perching, local reminders, optional media controls and a focus timer. Free and open source, with a Linux download available on [desktop-buddy.netlify.app](https://desktop-buddy.netlify.app/).
 
 <a href="https://rajm012.vercel.app/projects#desktop-buddy">
   <img src="public/projects/desktop-buddy.webp" alt="Eight Desktop Buddy screenshots: Bolt idle, walking, running, jumping, falling, landing, dancing and sleeping" width="100%" />
 </a>
 
-[**Meet Bolt in the screenshot gallery →**](https://rajm012.vercel.app/projects#desktop-buddy)
+[**Download for Linux →**](https://desktop-buddy.netlify.app/#download) · [**Source code**](https://github.com/rajm012/Desktop-Buddy) · [**Meet Bolt in the screenshot gallery →**](https://rajm012.vercel.app/projects#desktop-buddy)
 
 ## 🧪 Deep learning, with the equations included
 
@@ -161,7 +161,7 @@ Studied NP-complete classes, formal reductions and approximation, decomposing ha
 **Away from the terminal:** Hindi sahitya, philosophy, films, music, running and cycling. English / Hindi.
 
 <details>
-<summary><b>📦 Full repository catalog · 22 public + 9 private</b></summary>
+<summary><b>📦 Full repository catalog · 23 public + 8 private</b></summary>
 
 Checked on 8 November 2026. Every owned repository is included, with private work described without source links.
 
@@ -192,7 +192,7 @@ Checked on 8 November 2026. Every owned repository is included, with private wor
 | [BlogsCorner](https://github.com/rajm012/BlogsCorner) | Blog publishing and discovery platform | Public |
 | [MovieFlix](https://github.com/rajm012/MovieFlix) | Movie-ticket booking, seat selection and payments | Public |
 | [Ethical-Keylogger](https://github.com/rajm012/Ethical-Keylogger) | Activity-monitoring tool for parental control | Public |
-| Desktop-Buddy | Animated Linux companions, reminders and a focus timer | Private |
+| [Desktop-Buddy](https://github.com/rajm012/Desktop-Buddy) | Animated Linux companions, reminders and a focus timer · [Website & download](https://desktop-buddy.netlify.app/) | Public |
 | [Rajm012](https://github.com/rajm012/Rajm012) | This React, Vite and Tailwind portfolio | Public |
 | resumes | Private résumé source documents; current public PDF linked above | Private |
 | [Quant-Finance](https://github.com/rajm012/Quant-Finance) | MA-546 and MA-653 finance assignments, market analysis and reports | Public |

@@ -329,8 +329,12 @@ export const projects = [
     year: 2026,
     category: 'Tools',
     summary:
-      'Bolt, Boo and Mochi live on the Linux desktop: animated companions with window perching, local reminders, a focus timer and optional media controls.',
+      'Bolt, Boo-ombastic and Mochi live on the Linux desktop: animated companions with window perching, local reminders, a focus timer and optional media controls. Free, open source and available to download for Linux.',
     stack: ['Python', 'PyQt6', 'QPainter', 'X11'],
+    links: {
+      demo: 'https://desktop-buddy.netlify.app/',
+      download: 'https://desktop-buddy.netlify.app/#download',
+    },
     image: '/projects/desktop-buddy.webp',
     gallery: [
       { src: '/projects/desktop-buddy/bolt-idle.png', alt: 'Bolt standing idle', caption: 'Idle' },
@@ -342,7 +346,7 @@ export const projects = [
       { src: '/projects/desktop-buddy/bolt-dance.png', alt: 'Bolt dancing', caption: 'Dance' },
       { src: '/projects/desktop-buddy/bolt-sleep.png', alt: 'Bolt sleeping', caption: 'Sleep' },
     ],
-    private: true,
+    private: false,
   },
   {
     slug: 'portfolio',
