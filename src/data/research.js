@@ -1,3 +1,7 @@
+import { projects } from './projects.js';
+
+const projectFor = (slug) => projects.find((project) => project.slug === slug);
+
 export const papers = [
   {
     slug: 'sage-pinn',
@@ -13,8 +17,8 @@ export const papers = [
   },
   {
     slug: 'eof-pinn',
-    title: 'Physics-informed learning of electroosmotic flow in cylindrical nanochannels',
-    authors: ['Doyel Pandey', 'Raj Maurya'],
+    title: 'SAFE-PINN: A Singularity-Free Physics-Informed Neural Network for Electroosmotic Flow in a Cylindrical Nanochannel with Axially Varying Zeta Potential',
+    authors: ['Raj Maurya', 'Doyel Pandey', 'Somchai Wongwises'],
     venue: 'Manuscript in preparation',
     year: 2026,
     status: 'In preparation',
@@ -26,45 +30,56 @@ export const papers = [
 
 export const studies = [
   {
+    slug: 'blood-flow',
     title: 'Near-wall blood flow from sparse data',
     kind: 'Replication',
     year: 2026,
     summary:
       'Re-implements Arzani, Wang & D’Souza (Phys. Fluids, 2021): PINNs recover near-wall haemodynamics in stenosis and aneurysm geometries from a handful of sensors, with CFD references generated in COMSOL.',
-    private: true,
   },
   {
+    slug: 'wavy-channel',
     title: 'Flow and heat transfer in a wavy channel',
     kind: 'Replication',
     year: 2026,
     summary:
-      'Unsupervised PINN replication of a wavy-patterned channel study for which no code or data were released — every hyper-parameter re-derived from the paper.',
-    private: true,
+      'PINN replication of a wavy-patterned channel study with COMSOL references, reconstructed collocation sampling and experiments in balancing the physics losses. Pressure and thermal robustness remain in progress.',
   },
   {
+    slug: 'neuro-trade',
     title: 'Neuro-Trade: Fokker-Planck PINNs for Indian equities',
     kind: 'Quant research',
     year: 2025,
     summary:
       'From GBM and Heston-Fokker-Planck solvers to a PINN that learns drift and diffusion of 14 NSE stocks (2015-2025) by solving the Fokker-Planck inverse problem against empirical densities.',
-    code: 'https://github.com/rajm012/Neuro-Trade-via-PINNs',
   },
   {
+    slug: 'ctaea',
     title: 'C-TAEA for constrained multi-objective optimisation',
     kind: 'Replication',
     year: 2026,
     summary:
-      'Full from-scratch implementation of the two-archive evolutionary algorithm (IEEE TEVC) with benchmark problem variations, metrics and proposed improvements.',
-    code: 'https://github.com/rajm012/Quant-Finance-Project',
+      'Implementation of C-TAEA alongside five constrained multi-objective algorithms, with DTLZ benchmark variations, performance metrics and experiment reports.',
   },
   {
-    title: 'Bessel and Legendre equations with PINNs',
-    kind: 'Study',
-    year: 2024,
-    summary: 'Early work embedding classical special-function ODEs into the training loss of a neural network.',
-    code: 'https://github.com/rajm012/Diifferential-Equation-by-PINN',
+    slug: 'superhedging',
+    title: 'Neural-network approximation for superhedging prices',
+    kind: 'Quant research',
+    year: 2026,
+    summary: 'Replication and extension of Biagini, Gonon and Reitsam (2023), with time-zero pricing experiments and reproducibility checks. Dynamic-method validation remains in progress.',
   },
-];
+  {
+    slug: 'paper-devices',
+    title: 'Paper-based smartphone soil analysis',
+    kind: 'Exploratory research',
+    year: 2026,
+    summary: 'Literature and product review for low-cost paper assays read by a smartphone, with color references and image analysis for soil nutrient screening.',
+  },
+].map((study) => ({
+  ...study,
+  code: projectFor(study.slug).links.code,
+  private: projectFor(study.slug).private,
+}));
 
 export const interestsResearch = [
   'Physics-informed and theory-aware deep learning',

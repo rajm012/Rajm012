@@ -2,10 +2,10 @@ import Cover from './Cover';
 import Icon from './Icon';
 
 export function ProjectLinks({ project, className = '' }) {
-  const { links = {}, private: isPrivate } = project;
+  const { links = {}, private: isPrivate, fork } = project;
   const items = [
     links.paper && { href: links.paper, label: 'Paper', icon: 'paper' },
-    links.code && { href: links.code, label: 'Code', icon: 'github' },
+    !isPrivate && links.code && { href: links.code, label: 'Code', icon: 'github' },
     links.demo && { href: links.demo, label: 'Live', icon: 'external' },
   ].filter(Boolean);
 
@@ -33,6 +33,13 @@ export function ProjectLinks({ project, className = '' }) {
           {l.label}
         </a>
       ))}
+      {isPrivate && (
+        <span className="inline-flex items-center gap-1.5 font-mono text-[11px] text-subtle">
+          <Icon name="lock" size={12} />
+          Private code
+        </span>
+      )}
+      {fork && <span className="font-mono text-[11px] text-subtle">Fork</span>}
     </div>
   );
 }

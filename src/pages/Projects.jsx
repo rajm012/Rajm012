@@ -2,11 +2,9 @@ import { useMemo, useState } from 'react';
 import Icon from '../components/Icon';
 import ProjectCard, { ProjectRow } from '../components/ProjectCard';
 import { PageHead } from '../components/Section';
-import { categories, featuredProjects, projects } from '../data/projects';
+import { categories, featuredProjects, projects, projectYears, repositoryStats } from '../data/projects';
 import { profile } from '../data/site';
 import { useTitle } from '../lib/hooks';
-
-const rest = projects.filter((p) => !p.featured);
 
 export default function Projects() {
   useTitle('Projects');
@@ -14,28 +12,28 @@ export default function Projects() {
   const [query, setQuery] = useState('');
 
   const counts = useMemo(() => {
-    const c = { All: rest.length };
-    for (const p of rest) c[p.category] = (c[p.category] || 0) + 1;
+    const c = { All: projects.length };
+    for (const p of projects) c[p.category] = (c[p.category] || 0) + 1;
     return c;
   }, []);
 
   const shown = useMemo(() => {
     const q = query.trim().toLowerCase();
-    return rest
+    return projects
       .filter((p) => category === 'All' || p.category === category)
       .filter(
         (p) =>
           !q ||
-          [p.title, p.summary, p.category, ...(p.stack || [])].join(' ').toLowerCase().includes(q),
+          [p.title, p.repository, p.summary, p.category, ...(p.stack || [])].join(' ').toLowerCase().includes(q),
       )
       .sort((a, b) => categories.indexOf(a.category) - categories.indexOf(b.category) || b.year - a.year);
   }, [category, query]);
 
   return (
     <div className="container">
-      <PageHead eyebrow={`${projects.length} projects · 2024 — 2026`} title="Things I’ve built">
-        Research code, products and the small tools I made because I needed them. The six below are the ones I’d show
-        first; everything else is further down.
+      <PageHead eyebrow={`${repositoryStats.total} repositories · ${projectYears[0]} — ${projectYears.at(-1)}`} title="Things I’ve built">
+        Research code, products and the small tools I made because I needed them. Browse all {repositoryStats.public}{' '}
+        public and {repositoryStats.private} private repositories below, starting with a few highlights.
       </PageHead>
 
       <section aria-labelledby="featured">
@@ -54,9 +52,9 @@ export default function Projects() {
       <section aria-labelledby="all" className="pt-20">
         <div className="mb-6 flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
           <div>
-            <p className="eyebrow mb-2">Archive</p>
+            <p className="eyebrow mb-2">Repository archive</p>
             <h2 id="all" className="text-[1.75rem] leading-tight sm:text-3xl">
-              Everything else
+              All projects
             </h2>
           </div>
           <label className="relative block w-full lg:w-72">
@@ -80,6 +78,7 @@ export default function Projects() {
                 type="button"
                 onClick={() => setCategory(c)}
                 aria-pressed={category === c}
+                aria-label={`${c}, ${counts[c] || 0} repositories`}
                 className={`whitespace-nowrap rounded-full border px-3.5 py-1.5 text-sm transition-colors ${
                   category === c
                     ? 'border-fg bg-fg text-bg'
@@ -94,6 +93,10 @@ export default function Projects() {
             ))}
           </div>
         </div>
+
+        <p className="mb-3 mt-3 font-mono text-[11px] text-muted" role="status" aria-live="polite">
+          Showing {shown.length} of {projects.length} repositories
+        </p>
 
         {shown.length ? (
           <ul className="border-t border-line">
@@ -111,7 +114,7 @@ export default function Projects() {
         )}
 
         <p className="mt-10 text-sm text-muted">
-          Private research code is described here but not linked. More on{' '}
+          Private repositories are listed with brief descriptions; their source code is not linked. Public code is on{' '}
           <a href={profile.links.github} target="_blank" rel="noopener noreferrer" className="link">
             GitHub
           </a>
