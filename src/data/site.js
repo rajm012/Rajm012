@@ -19,7 +19,7 @@ export const profile = {
 export const now = [
   {
     label: 'Research',
-    text: 'SAFE-PINN for electroosmotic flow in nanochannels — coupled Poisson–Nernst–Planck and Stokes.',
+    text: 'SAFE-PINN is under review — electroosmotic flow in nanochannels with coupled Poisson–Nernst–Planck and Stokes equations.',
   },
   {
     label: 'Thesis',
@@ -38,7 +38,7 @@ export const experience = [
     period: '2026 — now',
     points: [
       'First author of SAGE-PINN (arXiv 2610.10449), a singularity-free PINN for axisymmetric multiphysics flow, submitted to the Journal of Computational Physics.',
-      'Co-author of SAFE-PINN, a follow-up on electroosmotic flow in nanochannels (in preparation).',
+      'Co-author of SAFE-PINN, a follow-up on electroosmotic flow in nanochannels, submitted and under review.',
     ],
   },
   {

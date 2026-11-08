@@ -14,17 +14,19 @@ export const papers = [
     summary:
       'PINNs in cylindrical coordinates carry 1/r terms that blow up on the axis. SAGE-PINN removes the singularity by construction.',
     links: { paper: 'https://arxiv.org/abs/2610.10449', pdf: 'https://arxiv.org/pdf/2610.10449' },
+    image: projectFor('sage-pinn').image,
   },
   {
     slug: 'eof-pinn',
     title: 'SAFE-PINN: A Singularity-Free Physics-Informed Neural Network for Electroosmotic Flow in a Cylindrical Nanochannel with Axially Varying Zeta Potential',
     authors: ['Raj Maurya', 'Doyel Pandey', 'Somchai Wongwises'],
-    venue: 'Manuscript in preparation',
+    venue: 'Submitted manuscript',
     year: 2026,
-    status: 'In preparation',
+    status: 'Under review',
     summary:
       'PINN for coupled Poisson-Nernst-Planck + Stokes electroosmotic flow with an axially varying wall zeta potential.',
     links: {},
+    image: projectFor('eof-pinn').image,
   },
 ];
 

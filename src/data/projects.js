@@ -16,6 +16,7 @@ export const projects = [
     summary:
       'Real-time cross-channel identity resolution. Web, app, call-centre and branch events become one timeline per card member in milliseconds — with a confidence score and an audit row behind every link, and nothing ever merged silently.',
     stack: ['Python', 'PostgreSQL', 'TypeScript', 'Docker'],
+    image: '/projects/JourneySync.png',
     team: 'Team Cinephiles',
     private: false,
   },
@@ -31,6 +32,7 @@ export const projects = [
       'An asynchronous, anonymous, encrypted chat platform for the IIT Mandi community, with real-time messaging and secure message handling.',
     stack: ['Next.js', 'Supabase', 'PostgreSQL', 'Docker', 'AWS'],
     links: { demo: 'https://bytechat.in/' },
+    image: '/projects/ByteChat.png',
     private: false,
   },
   {
@@ -70,6 +72,7 @@ export const projects = [
       'Animated lyrics that follow music playing on Linux through MPRIS, with karaoke highlighting, three display styles and tray controls. A Linux adaptation of Constelyric.',
     stack: ['Python', 'PyQt6', 'MPRIS', 'D-Bus'],
     links: { demo: 'https://verseflow-linux.netlify.app/' },
+    image: '/projects/VerseFlow.png',
     private: false,
   },
   {
@@ -96,6 +99,7 @@ export const projects = [
       'Singularity-free, geometry-encoded PINN for coupled nanofluid flow and heat transfer in a stenosed artery, using cylindrical coordinates and COMSOL references.',
     stack: ['PyTorch', 'COMSOL', 'PINNs'],
     links: { paper: 'https://arxiv.org/abs/2610.10449' },
+    image: '/projects/SAGE-PINN.png',
     private: true,
   },
   {
@@ -105,8 +109,9 @@ export const projects = [
     year: 2026,
     category: 'Research',
     summary:
-      'Singularity-free PINN for coupled Poisson–Nernst–Planck and Stokes electroosmotic flow in cylindrical nanochannels with varying wall zeta potential. Manuscript in preparation.',
+      'Singularity-free PINN for coupled Poisson–Nernst–Planck and Stokes electroosmotic flow in cylindrical nanochannels with varying wall zeta potential. Manuscript under review.',
     stack: ['PyTorch', 'COMSOL'],
+    image: '/projects/SAFE-PINN.png',
     private: true,
   },
   {

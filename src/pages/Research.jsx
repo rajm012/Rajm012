@@ -35,39 +35,60 @@ export default function Research() {
         </h2>
         <ol className="space-y-5">
           {papers.map((p) => (
-            <li key={p.slug} className="card p-6 sm:p-8">
-              <div className="flex flex-wrap items-center gap-2">
-                <span
-                  className={`rounded-full px-2.5 py-0.5 font-mono text-[11px] ${
-                    p.status === 'Preprint' ? 'bg-accent-soft text-accent' : 'border border-line text-muted'
-                  }`}
-                >
-                  {p.status}
-                </span>
-                <span className="font-mono text-[11px] text-muted">{p.year}</span>
-              </div>
-              <h3 className="mt-3 max-w-3xl text-[1.4rem] leading-snug sm:text-[1.65rem]">{p.title}</h3>
-              <p className="mt-2 text-sm text-muted">
-                <Authors list={p.authors} />
-              </p>
-              <p className="mt-1 text-sm italic text-muted">{p.venue}</p>
-              <p className="mt-4 max-w-prose text-[15px] text-muted">{p.summary}</p>
-              {p.links.paper ? (
-                <div className="mt-5 flex flex-wrap gap-3">
-                  <a href={p.links.paper} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
-                    <Icon name="paper" size={15} />
-                    arXiv
-                  </a>
-                  <a href={p.links.pdf} target="_blank" rel="noopener noreferrer" className="btn">
-                    <Icon name="download" size={15} />
-                    PDF
-                  </a>
+            <li key={p.slug} className="card grid items-start gap-6 p-6 sm:p-8 md:grid-cols-[minmax(0,1fr)_15rem]">
+              <div>
+                <div className="flex flex-wrap items-center gap-2">
+                  <span
+                    className={`rounded-full px-2.5 py-0.5 font-mono text-[11px] ${
+                      p.status === 'Preprint' ? 'bg-accent-soft text-accent' : 'border border-line text-muted'
+                    }`}
+                  >
+                    {p.status}
+                  </span>
+                  <span className="font-mono text-[11px] text-muted">{p.year}</span>
                 </div>
-              ) : (
-                <p className="mt-5 inline-flex items-center gap-1.5 font-mono text-[11px] text-subtle">
-                  <Icon name="lock" size={12} />
-                  Manuscript and code are private until publication
+                <h3 className="mt-3 max-w-3xl text-[1.4rem] leading-snug sm:text-[1.65rem]">{p.title}</h3>
+                <p className="mt-2 text-sm text-muted">
+                  <Authors list={p.authors} />
                 </p>
+                <p className="mt-1 text-sm italic text-muted">{p.venue}</p>
+                <p className="mt-4 max-w-prose text-[15px] text-muted">{p.summary}</p>
+                {p.links.paper ? (
+                  <div className="mt-5 flex flex-wrap gap-3">
+                    <a href={p.links.paper} target="_blank" rel="noopener noreferrer" className="btn btn-primary">
+                      <Icon name="paper" size={15} />
+                      arXiv
+                    </a>
+                    <a href={p.links.pdf} target="_blank" rel="noopener noreferrer" className="btn">
+                      <Icon name="download" size={15} />
+                      PDF
+                    </a>
+                  </div>
+                ) : (
+                  <p className="mt-5 inline-flex items-center gap-1.5 font-mono text-[11px] text-subtle">
+                    <Icon name="lock" size={12} />
+                    Full manuscript and code are not publicly available
+                  </p>
+                )}
+              </div>
+              {p.image && (
+                <a
+                  href={p.image}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`View ${p.title} manuscript preview`}
+                  className="block overflow-hidden rounded-lg border border-line bg-white"
+                >
+                  <img
+                    src={p.image}
+                    alt={`${p.title} — first page`}
+                    width="2778"
+                    height="1746"
+                    loading="lazy"
+                    decoding="async"
+                    className="aspect-[16/10] w-full object-cover object-top"
+                  />
+                </a>
               )}
             </li>
           ))}

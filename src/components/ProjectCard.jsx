@@ -88,14 +88,27 @@ export default function ProjectCard({ project }) {
 }
 
 export function ProjectRow({ project }) {
-  const { title, year, category, summary, stack = [] } = project;
+  const { title, year, category, summary, stack = [], image } = project;
   return (
-    <li className="grid gap-x-6 gap-y-2 border-b border-line py-5 sm:grid-cols-[minmax(0,13rem)_minmax(0,1fr)_auto]">
-      <div>
-        <h3 className="font-sans text-[15px] font-semibold leading-snug">{title}</h3>
-        <p className="eyebrow mt-1">
-          {category} · {year}
-        </p>
+    <li className="grid gap-x-6 gap-y-2 border-b border-line py-5 sm:grid-cols-[minmax(0,17rem)_minmax(0,1fr)_auto]">
+      <div className="flex items-start gap-3">
+        {image && (
+          <img
+            src={image}
+            alt={`${title} preview`}
+            width="80"
+            height="50"
+            loading="lazy"
+            decoding="async"
+            className="h-[50px] w-20 shrink-0 rounded-md border border-line object-cover object-top"
+          />
+        )}
+        <div className="min-w-0">
+          <h3 className="font-sans text-[15px] font-semibold leading-snug">{title}</h3>
+          <p className="eyebrow mt-1">
+            {category} · {year}
+          </p>
+        </div>
       </div>
       <div className="min-w-0">
         <p className="text-[14.5px] text-muted">{summary}</p>

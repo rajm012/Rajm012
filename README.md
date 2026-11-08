@@ -23,7 +23,7 @@ I build physics-informed models — and the software around them. Most of my tim
 
 > Removes the 1/r axis singularity of cylindrical PINNs by construction (s = r², a modified stream function, exact boundary ansätze). Trained on physics alone, one setup solves 40 nanofluid stenosis cases (Re 0.46–128, Pe 10.5–2330) to within 1.6% axial-velocity error against finite-element references.
 
-Also: **SAFE-PINN** for electroosmotic flow in cylindrical nanochannels (in preparation), public replications of [near-wall blood flow](https://github.com/rajm012/Blood-flow-via-PINNs) and [wavy-channel flow](https://github.com/rajm012/Unsupervised-PINNs-for-Flow-Dynamics-in-Wavy-Channel), and [Neuro-Trade](https://github.com/rajm012/Neuro-Trade-via-PINNs) — Fokker–Planck PINNs for Indian equities. Newer work includes neural-network superhedging and exploratory paper-based soil sensing.
+Also: **SAFE-PINN** for electroosmotic flow in cylindrical nanochannels (submitted, under review), public replications of [near-wall blood flow](https://github.com/rajm012/Blood-flow-via-PINNs) and [wavy-channel flow](https://github.com/rajm012/Unsupervised-PINNs-for-Flow-Dynamics-in-Wavy-Channel), and [Neuro-Trade](https://github.com/rajm012/Neuro-Trade-via-PINNs) — Fokker–Planck PINNs for Indian equities. Newer work includes neural-network superhedging and exploratory paper-based soil sensing.
 
 ## Projects & repositories
 
@@ -38,7 +38,7 @@ Current catalog: **31 repositories — 22 public and 9 private**, checked on 8 N
 | [VerseFlow](https://github.com/rajm012/VerseFlow) | Animated, synchronized lyrics for Linux · adaptation of Constelyric | Public |
 | [NetSentinel](https://github.com/rajm012/NetSentinel) | Network traffic monitoring and threat detection | Public |
 | Stenosis-On-Polar-Coords | SAGE-PINN · axisymmetric nanofluid flow and heat transfer | Private |
-| POF-Comp | SAFE-PINN · electroosmotic flow in cylindrical nanochannels | Private |
+| POF-Comp | SAFE-PINN · electroosmotic flow in cylindrical nanochannels · under review | Private |
 | [Blood-flow-via-PINNs](https://github.com/rajm012/Blood-flow-via-PINNs) | Near-wall blood-flow recovery from sparse sensors | Public |
 | [Unsupervised-PINNs-for-Flow-Dynamics-in-Wavy-Channel](https://github.com/rajm012/Unsupervised-PINNs-for-Flow-Dynamics-in-Wavy-Channel) | PINN replication of flow in a wavy-patterned channel | Public |
 | Paper-Devices | Exploratory research into smartphone-readable soil assays | Private |
